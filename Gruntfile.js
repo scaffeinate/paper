@@ -12,6 +12,10 @@ module.exports = function(grunt) {
     '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
     ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
 
+    clean: {
+      dist: ['dist']
+    },
+
     // Task configuration.
     concat: {
       options: {
@@ -109,6 +113,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'connect']);
+  grunt.registerTask('default', ['clean', 'copy', 'sass', 'jshint', 'qunit', 'concat', 'uglify', 'connect']);
 
 };
