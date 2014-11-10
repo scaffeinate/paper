@@ -32,6 +32,7 @@ module.exports = function(grunt) {
           'bootstrap-sass-official/assets/javascripts/bootstrap.js',
           'jquery/dist/jquery.min.js',
           'jquery/dist/jquery.min.map',
+          'html5shiv/dist/html5shiv.js'
         ],
         dest: 'dist/js/vendor/'
       }
