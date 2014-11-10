@@ -39,6 +39,21 @@ module.exports = function(grunt) {
           'html5shiv/dist/html5shiv.js'
         ],
         dest: 'dist/js/vendor/'
+      },
+      distFonts: {
+        expand: true,
+        src: [
+          'fonts/**'
+        ],
+        dest: 'dist/'
+      },
+      distGlyphs: {
+        expand: true,
+        flatten: true,
+        src: [
+          '<%= bower_conf.directory %>/fontawesome/fonts/*'
+        ],
+        dest: 'dist/fonts'
       }
     },
     uglify: {
@@ -94,6 +109,12 @@ module.exports = function(grunt) {
           cwd: '<%= bower_conf.directory %>/bootstrap-sass-official/assets/stylesheets/',
           src: ['bootstrap.scss'],
           dest: 'dist/css/vendor/',
+          ext: '.css'
+        }, {
+          expand: true,
+          cwd: '<%= bower_conf.directory %>/fontawesome/scss/',
+          src: 'font-awesome.scss',
+          dest: 'dist/css/',
           ext: '.css'
         }]
       }
