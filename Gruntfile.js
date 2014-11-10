@@ -23,11 +23,18 @@ module.exports = function(grunt) {
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
-    
     copy: {
-
+      dist: {
+        expand: true,
+        flatten: true,
+        cwd: '<%= bower_conf.directory %>',
+        src: [
+          'bootstrap-sass-official/assets/javascripts/bootstrap.js',
+          'jquery/dist/jquery.min.js'
+        ],
+        dest: 'dist/js/vendor/'
+      }
     },
-
     uglify: {
       options: {
         banner: '<%= banner %>'
