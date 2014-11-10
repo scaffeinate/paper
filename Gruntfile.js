@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         stripBanners: false
       },
       dist: {
-        src: ['src/javascripts/*.js'],
+        src: ['<%= concat.dist.dest %>', 'dist/js/vendor/*.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -30,7 +30,8 @@ module.exports = function(grunt) {
         cwd: '<%= bower_conf.directory %>',
         src: [
           'bootstrap-sass-official/assets/javascripts/bootstrap.js',
-          'jquery/dist/jquery.min.js'
+          'jquery/dist/jquery.min.js',
+          'jquery/dist/jquery.min.map',
         ],
         dest: 'dist/js/vendor/'
       }
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
         banner: '<%= banner %>'
       },
       dist: {
-        src: '<%= concat.dist.dest %>',
+        src: ['<%= concat.dist.dest %>'],
         dest: 'dist/js/<%= pkg.name %>.min.js'
       }
     },
