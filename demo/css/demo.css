@@ -9,3 +9,14 @@
 #landing-nav {
   background: none;
 }
+
+.navbar-nav > li > a {
+  padding: 0;
+  margin-top: 8px;
+}
+
+.avatar {
+  width: 35px;
+  border-radius: 10em;
+  margin-right: 5px;
+}
