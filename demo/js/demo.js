@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $.backstretch('../../img/background-1.jpg');
+  $.backstretch('../../img/background-2.jpg');
 });
