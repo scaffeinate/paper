@@ -31,6 +31,35 @@
 .navbar-inverse {
   background-color: #252e30; }
 
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 0; }
+  .navbar-nav > li > .dropdown-menu li > a {
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: 600;
+    padding: 7px 20px; }
+
+.form-panel {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0;
+  border: 1px solid #f0f0f0; }
+
+.form-control {
+  border-radius: 0;
+  border: 1px solid #c0c0c0;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
+.btn {
+  border-radius: 0;
+  padding: 6px 18px;
+  font-size: 1.25rem;
+  font-weight: 700; }
+
 body {
   font-family: 'Lato'; }
 

@@ -16,3 +16,16 @@
 .navbar-inverse {
   background-color: $navbar-dark;
 }
+
+.navbar-nav > li >.dropdown-menu {
+  margin-top: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 0;
+  li > a {
+    border-bottom: 1px solid $light-grey;
+    font-weight: 600;
+    padding: 7px 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.form-panel {
+  background-color: $white;
+  padding: 20px;
+  border-radius: 0;
+  border: 1px solid $light-grey;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 1px solid $grey;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+} 
+
+.btn {
+  border-radius: 0;
+  padding: 6px 18px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
