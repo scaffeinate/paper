@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         stripBanners: false
       },
       dist: {
-        src: ['<%= concat.dist.dest %>', 'dist/js/vendor/*.js'],
+        src: ['src/js/*.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -33,12 +33,19 @@ module.exports = function(grunt) {
         flatten: true,
         cwd: '<%= bower_conf.directory %>',
         src: [
-          'bootstrap-sass-official/assets/javascripts/bootstrap.js',
+          'bootstrap/dist/js/bootstrap.min.js',
           'jquery/dist/jquery.min.js',
           'jquery/dist/jquery.min.map',
-          'html5shiv/dist/html5shiv.js'
+          'html5shiv/dist/html5shiv.min.js'
         ],
         dest: 'dist/js/vendor/'
+      },
+      distCss: {
+        expand: true,
+        flatten: true,
+        cwd: '<%= bower_conf.directory %>',
+        src: ['bootstrap/dist/css/bootstrap.min.css', 'fontawesome/css/font-awesome.min.css'],
+        dest: 'dist/css/vendor/'
       },
       distFonts: {
         expand: true,
@@ -106,14 +113,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= bower_conf.directory %>/bootstrap-sass-official/assets/stylesheets/',
-          src: ['bootstrap.scss'],
-          dest: 'dist/css/vendor/',
-          ext: '.css'
-        }, {
-          expand: true,
-          cwd: '<%= bower_conf.directory %>/fontawesome/scss/',
-          src: 'font-awesome.scss',
+          flatten: true,
+          cwd: 'src',
+          src: ['scss/*'],
           dest: 'dist/css/',
           ext: '.css'
         }]
