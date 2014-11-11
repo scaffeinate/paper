@@ -26,6 +26,7 @@
 .navbar-default .navbar-brand {
   font-weight: 700; }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  font-weight: 600;
   color: #fff; }
 
 .navbar-inverse {
@@ -41,6 +42,9 @@
     border-bottom: 1px solid #f0f0f0;
     font-weight: 600;
     padding: 7px 20px; }
+    .navbar-nav > li > .dropdown-menu li > a:hover {
+      color: #fff;
+      background-color: #019c70; }
 
 .form-panel {
   background-color: #fff;
@@ -50,7 +54,7 @@
 
 .form-control {
   border-radius: 0;
-  border: 1px solid #c0c0c0;
+  border: 2px solid #c0c0c0;
   box-shadow: none;
   -webkit-box-shadow: none; }
 
