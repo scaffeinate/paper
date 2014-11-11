@@ -3,3 +3,16 @@
   border: none;
   border-radius: 0;
 }
+
+.navbar-default {
+  .navbar-brand {
+    font-weight: 700;
+  }
+  .navbar-brand, .navbar-nav > li > a {
+    color: $white;
+  }
+}
+
+.navbar-inverse {
+  background-color: $navbar-dark;
+}

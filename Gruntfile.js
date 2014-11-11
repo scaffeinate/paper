@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         src: [
           'fonts/**'
         ],
-        dest: 'dist/'
+        dest: 'dist/css/'
       },
       distGlyphs: {
         expand: true,

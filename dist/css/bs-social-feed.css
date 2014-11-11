@@ -1,6 +1,37 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Lato/Lato-Light.woff) format("woff"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Lato/Lato-Regular.woff) format("woff"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/Lato/Lato-Semibold.woff) format("woff"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/Lato/Lato-Bold.woff) format("woff"); }
 .navbar {
   background-color: #019c70;
   border: none;
   border-radius: 0; }
+
+.navbar-default .navbar-brand {
+  font-weight: 700; }
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: #fff; }
+
+.navbar-inverse {
+  background-color: #252e30; }
+
+body {
+  font-family: 'Lato'; }
 
 /*# sourceMappingURL=bs-social-feed.css.map */
