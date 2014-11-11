@@ -74,39 +74,18 @@ module.exports = function(grunt) {
     },
     jshint: {
       options: {
-        jshintrc: '.jshintrc',
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: true,
-        boss: true,
-        eqnull: true,
-        browser: true,
-        globals: {}
+        jshintrc: '.jshintrc'
       },
       gruntfile: {
         src: 'Gruntfile.js'
-      },
-      lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
-    qunit: {
-      files: ['test/**/*.html']
-    },
     watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
-      },
-      lib_test: {
-        files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'qunit']
+      all: {
+        files: '**/*.scss',
+        options: {
+          livereload: true
+        }
       }
     },
     sass: {
@@ -125,8 +104,14 @@ module.exports = function(grunt) {
       base: {
         options: {
           port: 4200,
-          open: true,
+          livereload: 35729,
+          host: 'localhost',
           keepalive: true
+        }
+      },
+      livereload: {
+        options: {
+          open: true
         }
       }
     }
@@ -136,6 +121,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'copy', 'sass', 'jshint', 'qunit', 'concat', 'uglify', 'connect']);
+  grunt.registerTask('default', ['clean', 'copy', 'sass', 'jshint', 'concat', 'uglify', 'connect']);
 
 };
