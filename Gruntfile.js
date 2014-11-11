@@ -115,7 +115,7 @@ module.exports = function(grunt) {
           expand: true,
           flatten: true,
           cwd: 'src',
-          src: ['scss/*'],
+          src: ['scss/bs-social-feed.scss'],
           dest: 'dist/css/',
           ext: '.css'
         }]
