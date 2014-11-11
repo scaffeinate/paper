@@ -1,4 +1,6 @@
 .navbar {
-  background-color: #019c70; }
+  background-color: #019c70;
+  border: none;
+  border-radius: 0; }
 
 /*# sourceMappingURL=bs-social-feed.css.map */

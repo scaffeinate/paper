@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         src: [
           '<%= bower_conf.directory %>/fontawesome/fonts/*'
         ],
-        dest: 'dist/fonts'
+        dest: 'dist/css/fonts'
       }
     },
     uglify: {
