@@ -34,3 +34,14 @@
     };
   }
 }
+
+.navbar-form .form-control {
+  border: none;
+  border-radius: 2px;
+  background-color: $light-grey;
+  min-width: 350px;
+  &:focus {
+    border: none;
+    background-color: $white;
+  };
+}

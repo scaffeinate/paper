@@ -46,6 +46,15 @@
       color: #fff;
       background-color: #019c70; }
 
+.navbar-form .form-control {
+  border: none;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  min-width: 350px; }
+  .navbar-form .form-control:focus {
+    border: none;
+    background-color: #fff; }
+
 .form-panel {
   background-color: #fff;
   padding: 20px;
@@ -56,7 +65,12 @@
   border-radius: 0;
   border: 2px solid #c0c0c0;
   box-shadow: none;
-  -webkit-box-shadow: none; }
+  -webkit-box-shadow: none;
+  outline: none; }
+  .form-control:focus {
+    border: 2px solid #555;
+    box-shadow: none;
+    -webkit-box-shadow: none; }
 
 .btn {
   border-radius: 0;
@@ -67,7 +81,7 @@
 .card {
   background-color: #fff;
   border-radius: 0;
-  border: none;
+  border: 1px solid transparent;
   min-height: 50px; }
 
 .cover-pic {
@@ -87,20 +101,20 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 50px; }
-  .about #name {
+  .about .name {
     display: block;
     text-align: center;
     font-weight: 600;
     font-size: 1.65rem; }
-  .about #username {
+  .about .username {
     display: block;
     text-align: center;
     font-size: 1.35rem;
     color: #c0c0c0; }
   .about form {
     margin-top: 15px; }
-  .about #new-microblog {
-    resize: none; }
+    .about form textarea {
+      resize: none; }
 
 .news-feed {
   background-color: #fff;
@@ -132,5 +146,8 @@
 
 body {
   font-family: 'Lato'; }
+
+*:focus {
+  outline: 0; }
 
 /*# sourceMappingURL=social-ui.css.map */

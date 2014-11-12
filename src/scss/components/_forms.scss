@@ -10,6 +10,12 @@
   border: 2px solid $grey;
   box-shadow: none;
   -webkit-box-shadow: none;
+  outline: none;
+  &:focus {
+    border: 2px solid $light-black;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  };
 } 
 
 .btn {

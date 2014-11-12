@@ -1,7 +1,7 @@
 .card {
   background-color: $white;
   border-radius: 0;
-  border: none;
+  border: 1px solid transparent;
   min-height: 50px;
 }
 
@@ -25,13 +25,13 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 50px;
-  #name {
+  .name {
     display: block;
     text-align: center;
     font-weight: 600;
     font-size: 1.65rem;
   }
-  #username {
+  .username {
     display: block;
     text-align: center;
     font-size: 1.35rem;
@@ -40,10 +40,9 @@
 
   form {
     margin-top: 15px;
-  }
-
-  #new-microblog {
-    resize:none;
+    textarea {
+      resize:none;
+    }
   }
 }
 
