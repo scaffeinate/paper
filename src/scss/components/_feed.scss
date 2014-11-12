@@ -1,45 +1,49 @@
-.left-panel {
+.card {
   background-color: $white;
-  padding-bottom: 15px;
-  .cover-pic {
-    height: 125px;
-    position: relative;
-    .profile-pic {
-      @extend .avatar;
-      position: absolute;
-      bottom: 0;
-      left: 40%;
-      margin-bottom: -30px;
-      width: 63px !important;
-      border: 4px solid $white;
-    }
+  border-radius: 0;
+  border: none;
+  min-height: 50px;
+}
+
+.cover-pic {
+  height: 125px;
+  position: relative;
+  .profile-pic {
+    @extend .avatar;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin-bottom: -30px;
+    width: 63px !important;
+    border: 4px solid $white;
+  }
+}
+
+.about {
+  margin-top: 40px;
+  line-height: 1.85rem !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  #name {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.65rem;
+  }
+  #username {
+    display: block;
+    text-align: center;
+    font-size: 1.35rem;
+    color: $grey;
   }
 
-  .about {
-    margin-top: 40px;
-    line-height: 1.85rem !important;
-    padding-left: 10px;
-    padding-right: 10px;
-    #name {
-      display: block;
-      text-align: center;
-      font-weight: 600;
-      font-size: 1.65rem;
-    }
-    #username {
-      display: block;
-      text-align: center;
-      font-size: 1.35rem;
-      color: $grey;
-    }
+  form {
+    margin-top: 15px;
+  }
 
-    form {
-      margin-top: 15px;
-    }
-
-    #new-microblog {
-      resize:none;
-    }
+  #new-microblog {
+    resize:none;
   }
 }
 
@@ -50,24 +54,24 @@
   border-radius: 5px;
 }
 
-.right-panel {
-  background-color: $white;
-  .title {
-    font-weight: 700;
-    font-size: 1.75rem;
-    background-color: $light-grey;
-    display: block;
-    padding: 10px;
-  }
-  .suggestions {
-    padding-left: 10px;
-    list-style: none;
-    li {
-      padding: 10px;
-    }
-    .username {
+.panel-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  background-color: $light-grey;
+  display: block;
+  padding: 10px;
+}
 
-    }
+.footer {
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.panel-list {
+  padding-left: 10px;
+  list-style: none;
+  li {
+    padding: 10px;
   }
 }
 

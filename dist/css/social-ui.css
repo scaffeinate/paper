@@ -64,38 +64,43 @@
   font-size: 1.25rem;
   font-weight: 700; }
 
-.left-panel {
+.card {
   background-color: #fff;
-  padding-bottom: 15px; }
-  .left-panel .cover-pic {
-    height: 125px;
-    position: relative; }
-    .left-panel .cover-pic .profile-pic {
-      position: absolute;
-      bottom: 0;
-      left: 40%;
-      margin-bottom: -30px;
-      width: 63px !important;
-      border: 4px solid #fff; }
-  .left-panel .about {
-    margin-top: 40px;
-    line-height: 1.85rem !important;
-    padding-left: 10px;
-    padding-right: 10px; }
-    .left-panel .about #name {
-      display: block;
-      text-align: center;
-      font-weight: 600;
-      font-size: 1.65rem; }
-    .left-panel .about #username {
-      display: block;
-      text-align: center;
-      font-size: 1.35rem;
-      color: #c0c0c0; }
-    .left-panel .about form {
-      margin-top: 15px; }
-    .left-panel .about #new-microblog {
-      resize: none; }
+  border-radius: 0;
+  border: none;
+  min-height: 50px; }
+
+.cover-pic {
+  height: 125px;
+  position: relative; }
+  .cover-pic .profile-pic {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin-bottom: -30px;
+    width: 63px !important;
+    border: 4px solid #fff; }
+
+.about {
+  margin-top: 40px;
+  line-height: 1.85rem !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px; }
+  .about #name {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.65rem; }
+  .about #username {
+    display: block;
+    text-align: center;
+    font-size: 1.35rem;
+    color: #c0c0c0; }
+  .about form {
+    margin-top: 15px; }
+  .about #new-microblog {
+    resize: none; }
 
 .news-feed {
   background-color: #fff;
@@ -103,21 +108,24 @@
   min-height: 5rem;
   border-radius: 5px; }
 
-.right-panel {
-  background-color: #fff; }
-  .right-panel .title {
-    font-weight: 700;
-    font-size: 1.75rem;
-    background-color: #f0f0f0;
-    display: block;
-    padding: 10px; }
-  .right-panel .suggestions {
-    padding-left: 10px;
-    list-style: none; }
-    .right-panel .suggestions li {
-      padding: 10px; }
+.panel-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  background-color: #f0f0f0;
+  display: block;
+  padding: 10px; }
 
-.avatar, .left-panel .cover-pic .profile-pic {
+.footer {
+  padding: 10px;
+  word-wrap: break-word; }
+
+.panel-list {
+  padding-left: 10px;
+  list-style: none; }
+  .panel-list li {
+    padding: 10px; }
+
+.avatar, .cover-pic .profile-pic {
   width: 35px;
   border-radius: 10em;
   margin-right: 5px; }
