@@ -1,5 +1,6 @@
 .left-panel {
   background-color: $white;
+  padding-bottom: 15px;
   .cover-pic {
     height: 125px;
     position: relative;
@@ -16,22 +17,31 @@
 
   .about {
     margin-top: 40px;
-    text-align: center;
     line-height: 1.85rem !important;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 15px;
     #name {
+      display: block;
+      text-align: center;
       font-weight: 600;
       font-size: 1.65rem;
     }
     #username {
       display: block;
+      text-align: center;
       font-size: 1.35rem;
       color: $grey;
     }
+
+    form {
+      margin-top: 15px;
+    }
+
     #new-microblog {
-      margin-bottom: 20px;
+      resize:none;
+    }
+    button#share {
+      
     }
   }
 }

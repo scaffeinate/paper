@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
               <i class="fa fa-bell"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -52,15 +52,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <div class="left-panel">
+        <div class="left-panel clearfix">
           <div class="cover-pic">
             <img src="http://www.gravatar.com/avatar/742fd360df942c97960ec92e497b8dd4.png" alt="" class="profile-pic">
           </div>
           <div class="about">
             <label id="name">Sudharshan Iyer</label>
             <label id="username">@sudharshan_iyer</label>
-            <textarea name="new-microblog" id="new-microblog" placeholder="Compose Microblog" class="form-control">
-            </textarea>
+            <form role="form">
+              <div class="form-group">
+                <textarea id="new-microblog" rows="3" cols="20" class="form-control" placeholder="Compose Micropost"></textarea>
+              </div>
+              <button id="share" class="btn btn-primary pull-right">Share</button>
+            </form>
           </div>
         </div>
       </div>

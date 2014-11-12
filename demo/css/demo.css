@@ -14,3 +14,10 @@
   padding: 0;
   margin-top: 8px;
 }
+
+.navbar-icons {
+  margin-top: 15px !important;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 1.75rem;
+}
