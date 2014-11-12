@@ -103,6 +103,20 @@
   min-height: 5rem;
   border-radius: 5px; }
 
+.right-panel {
+  background-color: #fff; }
+  .right-panel .title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    background-color: #f0f0f0;
+    display: block;
+    padding: 10px; }
+  .right-panel .suggestions {
+    padding-left: 10px;
+    list-style: none; }
+    .right-panel .suggestions li {
+      padding: 10px; }
+
 .avatar, .left-panel .cover-pic .profile-pic {
   width: 35px;
   border-radius: 10em;

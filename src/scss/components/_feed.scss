@@ -40,9 +40,6 @@
     #new-microblog {
       resize:none;
     }
-    button#share {
-      
-    }
   }
 }
 
@@ -51,6 +48,27 @@
   padding: 20px;
   min-height: 5rem;
   border-radius: 5px;
+}
+
+.right-panel {
+  background-color: $white;
+  .title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    background-color: $light-grey;
+    display: block;
+    padding: 10px;
+  }
+  .suggestions {
+    padding-left: 10px;
+    list-style: none;
+    li {
+      padding: 10px;
+    }
+    .username {
+
+    }
+  }
 }
 
 .avatar {
