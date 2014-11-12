@@ -9,7 +9,7 @@
     font-weight: 700;
   }
   .navbar-brand, .navbar-nav > li > a {
-    font-weight: 600;
+    font-weight: 700;
     color: $white;
   }
 }
@@ -18,8 +18,8 @@
   background-color: $navbar-dark;
 }
 
-.navbar-nav > li >.dropdown-menu {
-  margin-top: 12px;
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 14px;
   border-radius: 0;
   box-shadow: none;
   -webkit-box-shadow: none;

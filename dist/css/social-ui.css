@@ -26,14 +26,14 @@
 .navbar-default .navbar-brand {
   font-weight: 700; }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  font-weight: 600;
+  font-weight: 700;
   color: #fff; }
 
 .navbar-inverse {
   background-color: #252e30; }
 
 .navbar-nav > li > .dropdown-menu {
-  margin-top: 12px;
+  margin-top: 14px;
   border-radius: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
