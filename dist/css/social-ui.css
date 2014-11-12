@@ -120,11 +120,11 @@
     .about form textarea {
       resize: none; }
 
-.news-feed {
-  background-color: #fff;
-  padding: 20px;
-  min-height: 5rem;
-  border-radius: 5px; }
+.micropost {
+  padding: 15px 25px;
+  border-bottom: 1px solid #f0f0f0; }
+  .micropost .post {
+    display: block; }
 
 .panel-title {
   font-weight: 700;

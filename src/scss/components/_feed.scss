@@ -46,11 +46,12 @@
   }
 }
 
-.news-feed {
-  background-color: $white;
-  padding: 20px;
-  min-height: 5rem;
-  border-radius: 5px;
+.micropost {
+  padding: 15px 25px;
+  border-bottom: 1px solid $light-grey;
+  .post {
+    display: block;
+  }
 }
 
 .panel-title {
