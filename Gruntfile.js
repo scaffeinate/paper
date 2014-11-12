@@ -83,10 +83,7 @@ module.exports = function(grunt) {
     watch: {
       all: {
         files: '**/*.scss',
-        tasks: ['sass'],
-        options: {
-          livereload: true
-        }
+        tasks: ['sass']
       }
     },
     sass: {
@@ -105,14 +102,7 @@ module.exports = function(grunt) {
       base: {
         options: {
           port: 4200,
-          livereload: 35729,
-          host: 'localhost',
-          keepalive: true
-        }
-      },
-      livereload: {
-        options: {
-          open: true
+          host: 'localhost'
         }
       }
     }
@@ -121,7 +111,13 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt);
 
-  // Default task.
-  grunt.registerTask('default', ['clean', 'copy', 'sass', 'jshint', 'concat', 'uglify', 'connect']);
+  // Default task
+  grunt.registerTask('default', ['clean', 'copy', 'concat', 'uglify']);
+
+  // Sass compile task.
+  grunt.registerTask('compileSass', ['sass']);
+
+  // Connect task
+  grunt.registerTask('server', ['sass', 'connect', 'watch']);
 
 };
