@@ -39,9 +39,14 @@
   border: none;
   border-radius: 2px;
   background-color: $light-grey;
-  min-width: 350px;
-  &:focus {
+  min-width: 275px;
+  &:focus, &:focus + .input-group-addon {
     border: none;
     background-color: $white;
   };
+}
+
+.navbar-form .input-group .input-group-addon {
+  background-color: $light-grey;
+  border: none;
 }

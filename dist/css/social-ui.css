@@ -50,10 +50,14 @@
   border: none;
   border-radius: 2px;
   background-color: #f0f0f0;
-  min-width: 350px; }
-  .navbar-form .form-control:focus {
+  min-width: 275px; }
+  .navbar-form .form-control:focus, .navbar-form .form-control:focus + .input-group-addon {
     border: none;
     background-color: #fff; }
+
+.navbar-form .input-group .input-group-addon {
+  background-color: #f0f0f0;
+  border: none; }
 
 .form-panel {
   background-color: #fff;
@@ -81,7 +85,7 @@
 .card {
   background-color: #fff;
   border-radius: 0;
-  border: 1px solid transparent;
+  border: none;
   min-height: 50px; }
 
 .cover-pic {
