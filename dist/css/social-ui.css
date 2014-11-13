@@ -85,7 +85,7 @@
 .card {
   background-color: #fff;
   border-radius: 0;
-  border: none;
+  border: 1px solid #f0f0f0;
   min-height: 50px; }
   .card .card-title {
     font-weight: 700;
