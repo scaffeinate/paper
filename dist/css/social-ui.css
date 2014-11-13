@@ -87,6 +87,12 @@
   border-radius: 0;
   border: none;
   min-height: 50px; }
+  .card .card-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    background-color: #f0f0f0;
+    display: block;
+    padding: 10px; }
 
 .cover-pic {
   height: 125px;
@@ -104,21 +110,17 @@
   line-height: 1.85rem !important;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 50px; }
-  .about .name {
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.65rem; }
-  .about .username {
-    display: block;
-    text-align: center;
-    font-size: 1.35rem;
-    color: #c0c0c0; }
-  .about form {
-    margin-top: 15px; }
-    .about form textarea {
-      resize: none; }
+  padding-bottom: 10px;
+  text-align: center; }
+
+.name {
+  font-weight: 600;
+  font-size: 1.65rem; }
+
+.username {
+  display: block;
+  font-size: 1.35rem;
+  color: #c0c0c0; }
 
 .micropost {
   padding: 15px 25px;
@@ -126,19 +128,12 @@
   .micropost .post {
     display: block; }
 
-.panel-title {
-  font-weight: 700;
-  font-size: 1.75rem;
-  background-color: #f0f0f0;
-  display: block;
-  padding: 10px; }
-
 .footer {
   padding: 10px;
   word-wrap: break-word; }
 
 .panel-list {
-  padding-left: 10px;
+  padding-left: 0px;
   list-style: none; }
   .panel-list li {
     padding: 10px; }
