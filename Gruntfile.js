@@ -33,7 +33,6 @@ module.exports = function(grunt) {
         flatten: true,
         cwd: '<%= bower_conf.directory %>',
         src: [
-          'bootstrap/dist/js/bootstrap.min.js',
           'jquery/dist/jquery.min.js',
           'jquery/dist/jquery.min.map',
           'html5shiv/dist/html5shiv.min.js'
@@ -44,7 +43,7 @@ module.exports = function(grunt) {
         expand: true,
         flatten: true,
         cwd: '<%= bower_conf.directory %>',
-        src: ['bootstrap/dist/css/bootstrap.min.css', 'fontawesome/css/font-awesome.min.css'],
+        src: ['fontawesome/css/font-awesome.min.css'],
         dest: 'dist/css/vendor/'
       },
       distFonts: {
@@ -70,6 +69,10 @@ module.exports = function(grunt) {
       dist: {
         src: ['<%= concat.dist.dest %>'],
         dest: 'dist/js/<%= pkg.name %>.min.js'
+      },
+      distBootstrap: {
+        src: ['<%= bower_conf.directory %>/bootstrap-sass-official/assets/javascripts/bootstrap.js'],
+        dest: 'dist/js/vendor/bootstrap.min.js'
       }
     },
     jshint: {
