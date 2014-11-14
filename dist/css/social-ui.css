@@ -3667,11 +3667,11 @@ tbody.collapse.in {
     color: #ccc;
     background-color: transparent; }
   .navbar-default .navbar-toggle {
-    border-color: #ddd; }
+    border-color: #fff; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #ddd; }
+      background-color: #01b582; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #888; }
+      background-color: #fff; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: none; }
@@ -3723,9 +3723,9 @@ tbody.collapse.in {
     color: #444;
     background-color: transparent; }
   .navbar-inverse .navbar-toggle {
-    border-color: #333; }
+    border-color: #fff; }
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-      background-color: #333; }
+      background-color: #3c3c3c; }
     .navbar-inverse .navbar-toggle .icon-bar {
       background-color: #fff; }
   .navbar-inverse .navbar-collapse,
