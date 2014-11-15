@@ -82,7 +82,7 @@ small,
 
 mark,
 .mark {
-  background-color: $state-warning-bg;
+  background-color: #d0d0d0;
   padding: .2em;
 }
 
@@ -229,7 +229,7 @@ dd {
 abbr[title],
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 abbr[data-original-title] {
-  cursor: help;
+  cursor: pointer;
   border-bottom: 1px dotted $abbr-border-color;
 }
 .initialism {
@@ -243,7 +243,7 @@ blockquote {
   margin: 0 0 $line-height-computed;
   font-size: $blockquote-font-size;
   border-left: 5px solid $blockquote-border-color;
-
+  font-weight: 700;
   p,
   ul,
   ol {
@@ -258,7 +258,7 @@ blockquote {
   small,
   .small {
     display: block;
-    font-size: 80%; // back to default font-size
+    font-size: 90%; // back to default font-size
     line-height: $line-height-base;
     color: $blockquote-small-color;
 
