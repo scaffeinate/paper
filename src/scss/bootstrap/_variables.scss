@@ -19,11 +19,11 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         lighten(#0063b0, 5%) !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         rgb(58,146,215) !default;
+$brand-success:         #00ca6d !default;
+$brand-info:            #00c0ef !default;
+$brand-warning:         #fcad26 !default;
+$brand-danger:          #f56954 !default;
 
 
 //== Scaffolding
@@ -157,7 +157,7 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                $font-medium !default;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
