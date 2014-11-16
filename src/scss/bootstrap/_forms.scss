@@ -146,7 +146,7 @@ output {
   &[readonly],
   fieldset[disabled] & {
     cursor: $cursor-disabled;
-    background-color: $input-bg-disabled;
+    background-color: $input-bg;
     opacity: 1; // iOS fix for unreadable disabled content
   }
 
@@ -360,13 +360,13 @@ input[type="checkbox"] {
 
 // Feedback states
 .has-success {
-  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+  @include form-control-validation(#5cb85c, #5cb85c, #5cb85c);
 }
 .has-warning {
-  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+  @include form-control-validation(darken(#fcad26, 5%), #fcad26, #fcad26);
 }
 .has-error {
-  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  @include form-control-validation(darken(#f56954, 6%), #f56954, #f56954);
 }
 
 // Reposition feedback icon if input has visible label above
