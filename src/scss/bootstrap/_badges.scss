@@ -7,7 +7,7 @@
 .badge {
   display: inline-block;
   min-width: 10px;
-  padding: 3px 7px;
+  padding: 5px;
   font-size: $font-size-small;
   font-weight: $badge-font-weight;
   color: $badge-color;
@@ -16,6 +16,7 @@
   white-space: nowrap;
   text-align: center;
   background-color: $badge-bg;
+  border: 1px solid #ccc;
   border-radius: $badge-border-radius;
 
   // Empty badges collapse automatically (not available in IE8)
@@ -50,6 +51,11 @@
   .nav-pills > li > a > & {
     margin-left: 3px;
   }
+}
+
+button > .badge {
+  padding: 3px 6px;
+  border: none;
 }
 
 // Hover state, but only for links

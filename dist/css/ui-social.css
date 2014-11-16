@@ -3893,15 +3893,15 @@ tbody.collapse.in {
 
 .label {
   display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
+  padding: .5em 1.2em;
+  font-size: 80%;
   font-weight: bold;
   line-height: 1;
   color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em; }
+  border-radius: 0; }
   .label:empty {
     display: none; }
   .btn .label {
@@ -3914,9 +3914,9 @@ a.label:hover, a.label:focus {
   cursor: pointer; }
 
 .label-default {
-  background-color: #777777; }
+  background-color: #505050; }
   .label-default[href]:hover, .label-default[href]:focus {
-    background-color: #5e5e5e; }
+    background-color: #373737; }
 
 .label-primary {
   background-color: #3a92d7; }
@@ -3946,16 +3946,17 @@ a.label:hover, a.label:focus {
 .badge {
   display: inline-block;
   min-width: 10px;
-  padding: 3px 7px;
+  padding: 5px;
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: #555;
   line-height: 1;
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #777777;
-  border-radius: 10px; }
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10rem; }
   .badge:empty {
     display: none; }
   .btn .badge {
@@ -3973,6 +3974,10 @@ a.label:hover, a.label:focus {
     margin-right: 5px; }
   .nav-pills > li > a > .badge {
     margin-left: 3px; }
+
+button > .badge {
+  padding: 3px 6px;
+  border: none; }
 
 a.badge:hover, a.badge:focus {
   color: #fff;
