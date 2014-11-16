@@ -8,6 +8,7 @@
   margin-bottom: $line-height-computed;
   list-style: none;
   background-color: $breadcrumb-bg;
+  border: 1px solid #ccc;
   border-radius: $border-radius-base;
 
   > li {
