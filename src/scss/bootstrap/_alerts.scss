@@ -11,6 +11,7 @@
   margin-bottom: $line-height-computed;
   border: 1px solid transparent;
   border-radius: $alert-border-radius;
+  font-size: (0.90 * $font-size-base);
 
   // Headings for larger alerts
   h4 {
