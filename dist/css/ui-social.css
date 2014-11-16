@@ -4114,24 +4114,25 @@ a.thumbnail.active {
     background-position: 0 0; } }
 .progress {
   overflow: hidden;
-  height: 21px;
+  height: 1.5rem;
   margin-bottom: 21px;
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-radius: 0px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ccc; }
 
 .progress-bar {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 12px;
-  line-height: 21px;
+  font-size: 9.6px;
+  line-height: 1.5rem;
   color: #fff;
   text-align: center;
   background-color: #3a92d7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: none;
+  box-shadow: none;
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease; }
