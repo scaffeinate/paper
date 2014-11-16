@@ -229,9 +229,9 @@
           <h3><b>Readonly State</b></h3>
           <input class="form-control" type="text" value="readonly input value" readonly>
         </div>
-      </div>
+      </div><br>
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <h3><b>Validation States</b></h3>
           <div class="form-group has-success">
             <label class="control-label" for="inputSuccess1">Input with success</label>
@@ -247,6 +247,68 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3><b>Form control with icons</b></h3>
+          <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">Input with success</label>
+            <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+            <i class="fa fa-check form-control-feedback"></i>
+            <span id="inputSuccess2Status" class="sr-only">(success)</span>
+          </div>
+          <div class="form-group has-warning has-feedback">
+            <label class="control-label" for="inputWarning2">Input with warning</label>
+            <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+            <i class="fa fa-warning form-control-feedback"></i>
+            <span id="inputWarning2Status" class="sr-only">(warning)</span>
+          </div>
+          <div class="form-group has-error has-feedback">
+            <label class="control-label" for="inputError2">Input with error</label>
+            <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+            <i class="fa fa-times form-control-feedback"></i>
+            <span id="inputError2Status" class="sr-only">(error)</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3><b>Control Sizing</b></h3>
+          <div class="form-group">
+            <input class="form-control input-lg" type="text" placeholder=".input-lg">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Default input">
+          </div>
+          <div class="form-group">
+            <input class="form-control input-sm" type="text" placeholder=".input-sm">
+          </div>
+          <div class="form-group">
+            <select class="form-control input-lg">
+              <option value="-1">Default</option>
+              <option value="0">Option 1</option>
+              <option value="1">Option 2</option>
+              <option value="2">Option 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="-1">Default</option>
+              <option value="0">Option 1</option>
+              <option value="1">Option 2</option>
+              <option value="2">Option 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control input-sm">
+              <option value="-1">Default</option>
+              <option value="0">Option 1</option>
+              <option value="1">Option 2</option>
+              <option value="2">Option 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr>
     </div>
   </div>
   <script type="text/javascript" src="dist/js/vendor/jquery.min.js"></script>
