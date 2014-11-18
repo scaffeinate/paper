@@ -924,9 +924,11 @@ a {
     color: #216aa3;
     text-decoration: underline; }
   a:focus {
+    /* // Default
     outline: thin dotted;
+    // WebKit
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
+    outline-offset: -2px; */ }
 
 figure {
   margin: 0; }
@@ -2252,9 +2254,11 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+  /* // Default
   outline: thin dotted;
+  // WebKit
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
+  outline-offset: -2px; */ }
 
 output {
   display: block;
@@ -2659,9 +2663,11 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    /* // Default
     outline: thin dotted;
+    // WebKit
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
+    outline-offset: -2px; */ }
   .btn:hover, .btn:focus, .btn.focus {
     color: #333;
     text-decoration: none; }
@@ -3538,6 +3544,13 @@ tbody.collapse.in {
         .navbar-nav > li > a {
           padding-top: 14.5px;
           padding-bottom: 14.5px; } }
+
+.navbar-inverse .navbar-form button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white; }
+  .navbar-inverse .navbar-form button:hover {
+    background-color: #303c3e; }
 
 .navbar-form {
   margin-left: -15px;

@@ -285,6 +285,15 @@
 // Extension of the `.form-inline` with some extra flavor for optimum display in
 // our navbars.
 
+.navbar-inverse .navbar-form button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  &:hover {
+    background-color: lighten(#252e30, 5%);
+  };
+}
+
 .navbar-form {
   margin-left: -$navbar-padding-horizontal;
   margin-right: -$navbar-padding-horizontal;
