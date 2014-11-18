@@ -203,7 +203,7 @@
         </div>
       </div>
       <hr>
-      <h2><b>Breadcrumb</b></h2>
+      <h2><b>Breadcrumbs</b></h2>
       <div class="row">
         <div class="col-lg-8">
           <ol class="breadcrumb">
@@ -397,6 +397,122 @@
                 <h4><b>Thumbnail label</b></h4>
                 <p>Aenean gravida erat vehicula mi tristique, sit amet facilisis lorem mattis. Morbi non arcu finibus sapien bibendum rhoncus.</p>
                 <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h2><b>Modals</b></h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3><b>Basic</b></h3>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Launch demo modal
+          </button>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Demo Modal</h4>
+                </div>
+                <div class="modal-body">
+                  Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3><b>Varying Sizes</b></h3>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nibh non dapibus sodales. Aenean est lorem, faucibus eget nibh id, scelerisque maximus ligula. Duis ullamcorper commodo velit vitae eleifend. Duis nec magna a est pharetra consectetur eu semper felis. In convallis ac nunc ut euismod. Sed efficitur tempor ex. Nullam vitae libero et libero fermentum consequat. Nam a dapibus ante. Suspendisse ac dapibus felis, malesuada semper metus.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+          <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Small Modal</h4>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nibh non dapibus sodales. Aenean est lorem, faucibus eget nibh id, scelerisque maximus ligula. Duis ullamcorper commodo velit vitae eleifend. Duis nec magna a est pharetra consectetur eu semper felis. In convallis ac nunc ut euismod. Sed efficitur tempor ex. Nullam vitae libero et libero fermentum consequat. Nam a dapibus ante. Suspendisse ac dapibus felis, malesuada semper metus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3><b>Modal with Form</b></h3>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-form">Modal with form</button>
+          <div id="modal-form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Login</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="home.html" role="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Login</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3><b>Modal with Youtube Video</b></h3>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-youtube-video">Modal with Youtube Video</button>
+          <div id="modal-youtube-video" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Youtube Video</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Ga99hMi7wfY"></iframe>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

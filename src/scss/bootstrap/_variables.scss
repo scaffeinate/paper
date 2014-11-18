@@ -593,10 +593,10 @@ $label-link-hover-color:      #fff !default;
 //##
 
 //** Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+$modal-inner-padding:         20px !default;
 
 //** Padding applied to the modal title
-$modal-title-padding:         15px !default;
+$modal-title-padding:         10px !default;
 //** Modal title line-height
 $modal-title-line-height:     $line-height-base !default;
 
@@ -610,15 +610,15 @@ $modal-content-fallback-border-color:          #999 !default;
 //** Modal backdrop background color
 $modal-backdrop-bg:           #000 !default;
 //** Modal backdrop opacity
-$modal-backdrop-opacity:      .5 !default;
+$modal-backdrop-opacity:      .7 !default;
 //** Modal header border color
-$modal-header-border-color:   #e5e5e5 !default;
+$modal-header-border-color:   #ccc !default;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color !default;
 
-$modal-lg:                    900px !default;
-$modal-md:                    600px !default;
-$modal-sm:                    300px !default;
+$modal-lg:                    750px !default;
+$modal-md:                    550px !default;
+$modal-sm:                    450px !default;
 
 
 //== Alerts
