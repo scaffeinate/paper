@@ -5404,12 +5404,12 @@ button.close {
 .card {
   background-color: #fff;
   border-radius: 0;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #ccc;
   min-height: 50px; }
   .card .card-title {
     font-weight: 700;
     font-size: 1.75rem;
-    background-color: #f0f0f0;
+    background-color: #ccc;
     display: block;
     padding: 10px; }
 
@@ -5439,11 +5439,11 @@ button.close {
 .username {
   display: block;
   font-size: 1.35rem;
-  color: #c0c0c0; }
+  color: #ccc; }
 
 .micropost {
   padding: 15px 25px;
-  border-bottom: 1px solid #f0f0f0; }
+  border-bottom: 1px solid #ccc; }
   .micropost .post {
     display: block; }
 
@@ -5459,8 +5459,8 @@ button.close {
 
 .avatar, .cover-pic .profile-pic {
   width: 35px;
-  border-radius: 10em;
-  margin-right: 5px; }
+  /* border-radius: 10em; */
+  /* margin-right: 5px; */ }
 
 body {
   font-family: 'Lato'; }
