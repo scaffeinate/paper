@@ -11,6 +11,7 @@
 .carousel-inner {
   position: relative;
   overflow: hidden;
+  border: 1px solid #ccc;
   width: 100%;
 
   > .item {
@@ -106,12 +107,12 @@
 
   // Set gradients for backgrounds
   &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+    /* @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001)); */
   }
   &.right {
     left: auto;
     right: 0;
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+    /* @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5)); */
   }
 
   // Hover/focus state
@@ -126,8 +127,8 @@
   // Toggles
   .icon-prev,
   .icon-next,
-  .glyphicon-chevron-left,
-  .glyphicon-chevron-right {
+  .fa-chevron-left,
+  .fa-chevron-right {
     position: absolute;
     top: 50%;
     z-index: 5;
@@ -171,7 +172,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -216,7 +217,7 @@
   position: absolute;
   left: 15%;
   right: 15%;
-  bottom: 20px;
+  bottom: 30px;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
