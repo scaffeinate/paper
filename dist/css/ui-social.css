@@ -5468,4 +5468,7 @@ body {
 *:focus {
   outline: 0; }
 
+.affix-bottom {
+  position: relative; }
+
 /*# sourceMappingURL=ui-social.css.map */
