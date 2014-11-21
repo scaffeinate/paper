@@ -1,0 +1,5 @@
+@media(max-width:1200px){
+  #features-nav {
+    display: none;
+  }  
+}

@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="dist/css/vendor/font-awesome.min.css">
   <link rel="stylesheet" href="dist/css/ui-social.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#features-nav" style="position: relative;">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -34,494 +35,540 @@
     </div>
   </nav>
   <div class="container">
-    <div class="col-lg-10 col-lg-offset-1">
-      <h2><b>Typography</b></h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3><b>Headings</b></h3>
-          <h1>h1 Heading</h1>
-          <h2>h2 Heading</h2>
-          <h3>h3 Heading</h3>
-          <h4>h4 Heading</h4>
-          <h5>h5 Heading</h5>
-          <h6>h6 Heading</h6>
-        </div>
-        <div class="col-lg-6">
-          <h3><b>Small</b></h3>
-          <h1><small>h1.small</small></h1>
-          <h2><small>h2.small</small></h2>
-          <h3><small>h3.small</small></h3>
-          <h4><small>h4.small</small></h4>
-          <h5><small>h5.small</small></h5>
-          <h6><small>h6.small</small></h6>
-        </div>
+    <div class="col-lg-3">
+    <div id="features-nav" data-spy="affix">
+        <br><h4><b>Components</b></h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#color-swatches">Color Swatches</a></li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Paragraph</b></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nibh non dapibus sodales. Aenean est lorem, faucibus eget nibh id, scelerisque maximus ligula. Duis ullamcorper commodo velit vitae eleifend. Duis nec magna a est pharetra consectetur eu semper felis. In convallis ac nunc ut euismod. Sed efficitur tempor ex. Nullam vitae libero et libero fermentum consequat. Nam a dapibus ante. Suspendisse ac dapibus felis, malesuada semper metus.</p>
+    </div>
+    <div class="col-lg-9">
+      <div id="typography">
+        <h2><b>Typography</b></h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3><b>Headings</b></h3>
+            <h1>h1 Heading</h1>
+            <h2>h2 Heading</h2>
+            <h3>h3 Heading</h3>
+            <h4>h4 Heading</h4>
+            <h5>h5 Heading</h5>
+            <h6>h6 Heading</h6>
+          </div>
+          <div class="col-lg-6">
+            <h3><b>Small</b></h3>
+            <h1><small>h1.small</small></h1>
+            <h2><small>h2.small</small></h2>
+            <h3><small>h3.small</small></h3>
+            <h4><small>h4.small</small></h4>
+            <h5><small>h5.small</small></h5>
+            <h6><small>h6.small</small></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Paragraph</b></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nibh non dapibus sodales. Aenean est lorem, faucibus eget nibh id, scelerisque maximus ligula. Duis ullamcorper commodo velit vitae eleifend. Duis nec magna a est pharetra consectetur eu semper felis. In convallis ac nunc ut euismod. Sed efficitur tempor ex. Nullam vitae libero et libero fermentum consequat. Nam a dapibus ante. Suspendisse ac dapibus felis, malesuada semper metus.</p>
 
-          <p>Nulla aliquet ligula massa. Aenean gravida erat vehicula mi tristique, sit amet facilisis lorem mattis. Morbi non arcu finibus sapien bibendum rhoncus. Aenean enim elit, euismod eget ex sit amet, ornare tempor nisi. Nullam vitae mauris sed tortor rutrum fermentum at quis sapien. Nunc nec vehicula augue. Vestibulum ornare auctor iaculis. Integer porttitor eget enim id molestie.</p>
+            <p>Nulla aliquet ligula massa. Aenean gravida erat vehicula mi tristique, sit amet facilisis lorem mattis. Morbi non arcu finibus sapien bibendum rhoncus. Aenean enim elit, euismod eget ex sit amet, ornare tempor nisi. Nullam vitae mauris sed tortor rutrum fermentum at quis sapien. Nunc nec vehicula augue. Vestibulum ornare auctor iaculis. Integer porttitor eget enim id molestie.</p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Marked text</b></h3>
-          You can use the mark tag to <mark>highlight</mark> text.
-          <h3><b>Abbreviations</b></h3>
-          An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>
-          <h3><b>Small</b></h3>
-          <small>This text is small</small>
-          <h3><b>Blockquotes</b></h3>
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
-          <blockquote class="blockquote-reverse">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Marked text</b></h3>
+            You can use the mark tag to <mark>highlight</mark> text.
+            <h3><b>Abbreviations</b></h3>
+            An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>
+            <h3><b>Small</b></h3>
+            <small>This text is small</small>
+            <h3><b>Blockquotes</b></h3>
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote-reverse">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
         </div>
       </div>
       <hr>
-      <h2><b>Buttons</b></h2>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Options</b></h3>
-          <button type="button" class="btn btn-default">Default</button>
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-danger">Danger</button>
+      <div id="buttons">
+        <h2><b>Buttons</b></h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Options</b></h3>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Button Sizes</b></h3>
-          <p>
-            <button type="button" class="btn btn-primary btn-lg">Large button</button>
-            <button type="button" class="btn btn-default btn-lg">Large button</button>
-          </p>
-          <p>
-            <button type="button" class="btn btn-primary">Default button</button>
-            <button type="button" class="btn btn-default">Default button</button>
-          </p>
-          <p>
-            <button type="button" class="btn btn-primary btn-sm">Small button</button>
-            <button type="button" class="btn btn-default btn-sm">Small button</button>
-          </p>
-          <p>
-            <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-            <button type="button" class="btn btn-default btn-xs">Extra small button</button>
-          </p>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Button Sizes</b></h3>
+            <p>
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+              <button type="button" class="btn btn-default btn-lg">Large button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary">Default button</button>
+              <button type="button" class="btn btn-default">Default button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary btn-sm">Small button</button>
+              <button type="button" class="btn btn-default btn-sm">Small button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+              <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Block Level Buttons</b></h3>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="well">
-                <button type="button" class="btn btn-primary btn-md btn-block">Block level button</button>
-                <button type="button" class="btn btn-default btn-md btn-block">Block level button</button>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Block Level Buttons</b></h3>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="well">
+                  <button type="button" class="btn btn-primary btn-md btn-block">Block level button</button>
+                  <button type="button" class="btn btn-default btn-md btn-block">Block level button</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Active State</b></h3>
-          <button type="button" class="btn btn-primary btn-md active">Primary button</button>
-          <button type="button" class="btn btn-default btn-md active">Button</button>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Active State</b></h3>
+            <button type="button" class="btn btn-primary btn-md active">Primary button</button>
+            <button type="button" class="btn btn-default btn-md active">Button</button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Disabled State</b></h3>
-          <button type="button" class="btn btn-md btn-primary" disabled="disabled">Primary button</button>
-          <button type="button" class="btn btn-default btn-md" disabled="disabled">Button</button>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Disabled State</b></h3>
+            <button type="button" class="btn btn-md btn-primary" disabled="disabled">Primary button</button>
+            <button type="button" class="btn btn-default btn-md" disabled="disabled">Button</button>
+          </div>
         </div>
       </div>
       <br><hr>
-      <h2><b>Forms</b></h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3><b>Basic Example</b></h3>
-          <div class="well">
-            <form role="form">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Remember me
-                </label>
-              </div>
-              <button type="submit" class="btn btn-default">Sign in</button>
-            </form> 
+      <div id="forms">
+        <h2><b>Forms</b></h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3><b>Basic Example</b></h3>
+            <div class="well">
+              <form role="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </form> 
+            </div>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <h3><b>Horizontal Form</b></h3>
-          <div class="well">
-            <br>
-            <form class="form-horizontal" role="form">
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
+          <div class="col-lg-6">
+            <h3><b>Horizontal Form</b></h3>
+            <div class="well">
+              <br>
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                   </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-default">Sign in</button>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
                 </div>
-              </div>
-            </form>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Inline Form</b></h3>
-          <div class="well">
-            <form class="form-inline" role="form">
-              <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="exampleInputPassword2">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-default">Sign in</button>
-            </form>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Inline Form</b></h3>
+            <div class="well">
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputPassword2">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3><b>Disabled State</b></h3>
-          <input class="form-control" type="text" value="input disabled" disabled>
-        </div>
-        <div class="col-lg-6">
-          <h3><b>Readonly State</b></h3>
-          <input class="form-control" type="text" value="readonly input value" readonly>
-        </div>
-      </div><br>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3><b>Validation States</b></h3>
-          <div class="form-group has-success">
-            <label class="control-label" for="inputSuccess1">Input with success</label>
-            <input type="text" class="form-control" id="inputSuccess1">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3><b>Disabled State</b></h3>
+            <input class="form-control" type="text" value="input disabled" disabled>
           </div>
-          <div class="form-group has-warning">
-            <label class="control-label" for="inputWarning1">Input with warning</label>
-            <input type="text" class="form-control" id="inputWarning1">
+          <div class="col-lg-6">
+            <h3><b>Readonly State</b></h3>
+            <input class="form-control" type="text" value="readonly input value" readonly>
           </div>
-          <div class="form-group has-error">
-            <label class="control-label" for="inputError1">Input with error</label>
-            <input type="text" class="form-control" id="inputError1">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3><b>Form control with icons</b></h3>
-          <div class="form-group has-success has-feedback">
-            <label class="control-label" for="inputSuccess2">Input with success</label>
-            <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
-            <i class="fa fa-check form-control-feedback"></i>
-            <span id="inputSuccess2Status" class="sr-only">(success)</span>
-          </div>
-          <div class="form-group has-warning has-feedback">
-            <label class="control-label" for="inputWarning2">Input with warning</label>
-            <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
-            <i class="fa fa-warning form-control-feedback"></i>
-            <span id="inputWarning2Status" class="sr-only">(warning)</span>
-          </div>
-          <div class="form-group has-error has-feedback">
-            <label class="control-label" for="inputError2">Input with error</label>
-            <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
-            <i class="fa fa-times form-control-feedback"></i>
-            <span id="inputError2Status" class="sr-only">(error)</span>
+        </div><br>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3><b>Validation States</b></h3>
+            <div class="form-group has-success">
+              <label class="control-label" for="inputSuccess1">Input with success</label>
+              <input type="text" class="form-control" id="inputSuccess1">
+            </div>
+            <div class="form-group has-warning">
+              <label class="control-label" for="inputWarning1">Input with warning</label>
+              <input type="text" class="form-control" id="inputWarning1">
+            </div>
+            <div class="form-group has-error">
+              <label class="control-label" for="inputError1">Input with error</label>
+              <input type="text" class="form-control" id="inputError1">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3><b>Control Sizing</b></h3>
-          <div class="form-group">
-            <input class="form-control input-lg" type="text" placeholder=".input-lg">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3><b>Form control with icons</b></h3>
+            <div class="form-group has-success has-feedback">
+              <label class="control-label" for="inputSuccess2">Input with success</label>
+              <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+              <i class="fa fa-check form-control-feedback"></i>
+              <span id="inputSuccess2Status" class="sr-only">(success)</span>
+            </div>
+            <div class="form-group has-warning has-feedback">
+              <label class="control-label" for="inputWarning2">Input with warning</label>
+              <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+              <i class="fa fa-warning form-control-feedback"></i>
+              <span id="inputWarning2Status" class="sr-only">(warning)</span>
+            </div>
+            <div class="form-group has-error has-feedback">
+              <label class="control-label" for="inputError2">Input with error</label>
+              <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+              <i class="fa fa-times form-control-feedback"></i>
+              <span id="inputError2Status" class="sr-only">(error)</span>
+            </div>
           </div>
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="Default input">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-sm" type="text" placeholder=".input-sm">
-          </div>
-          <div class="form-group">
-            <select class="form-control input-lg">
-              <option value="-1">Default</option>
-              <option value="0">Option 1</option>
-              <option value="1">Option 2</option>
-              <option value="2">Option 3</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <select class="form-control">
-              <option value="-1">Default</option>
-              <option value="0">Option 1</option>
-              <option value="1">Option 2</option>
-              <option value="2">Option 3</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <select class="form-control input-sm">
-              <option value="-1">Default</option>
-              <option value="0">Option 1</option>
-              <option value="1">Option 2</option>
-              <option value="2">Option 3</option>
-            </select>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3><b>Control Sizing</b></h3>
+            <div class="form-group">
+              <input class="form-control input-lg" type="text" placeholder=".input-lg">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Default input">
+            </div>
+            <div class="form-group">
+              <input class="form-control input-sm" type="text" placeholder=".input-sm">
+            </div>
+            <div class="form-group">
+              <select class="form-control input-lg">
+                <option value="-1">Default</option>
+                <option value="0">Option 1</option>
+                <option value="1">Option 2</option>
+                <option value="2">Option 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option value="-1">Default</option>
+                <option value="0">Option 1</option>
+                <option value="1">Option 2</option>
+                <option value="2">Option 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control input-sm">
+                <option value="-1">Default</option>
+                <option value="0">Option 1</option>
+                <option value="1">Option 2</option>
+                <option value="2">Option 3</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
       <hr>
-      <h2><b>Tables</b></h2>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Basic</b></h3>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Country</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tony</td>
-                <td>Stark</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Walter</td>
-                <td>White</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Sherlock</td>
-                <td>Holmes</td>
-                <td>UK</td>
-              </tr>
-              <tr>
-                <td>Sheldon</td>
-                <td>Cooper</td>
-                <td>USA</td>
-              </tr>
-            </tbody>
-          </table>
+      <div id="tables">
+        <h2><b>Tables</b></h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Basic</b></h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tony</td>
+                  <td>Stark</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Walter</td>
+                  <td>White</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Sherlock</td>
+                  <td>Holmes</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Sheldon</td>
+                  <td>Cooper</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Striped</b></h3>
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Country</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tony</td>
-                <td>Stark</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Walter</td>
-                <td>White</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Sherlock</td>
-                <td>Holmes</td>
-                <td>UK</td>
-              </tr>
-              <tr>
-                <td>Sheldon</td>
-                <td>Cooper</td>
-                <td>USA</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Striped</b></h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tony</td>
+                  <td>Stark</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Walter</td>
+                  <td>White</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Sherlock</td>
+                  <td>Holmes</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Sheldon</td>
+                  <td>Cooper</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Bordered</b></h3>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Country</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tony</td>
-                <td>Stark</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Walter</td>
-                <td>White</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Sherlock</td>
-                <td>Holmes</td>
-                <td>UK</td>
-              </tr>
-              <tr>
-                <td>Sheldon</td>
-                <td>Cooper</td>
-                <td>USA</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Bordered</b></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tony</td>
+                  <td>Stark</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Walter</td>
+                  <td>White</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Sherlock</td>
+                  <td>Holmes</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Sheldon</td>
+                  <td>Cooper</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Condensed</b></h3>
-          <table class="table table-condensed">
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Country</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tony</td>
-                <td>Stark</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Walter</td>
-                <td>White</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Sherlock</td>
-                <td>Holmes</td>
-                <td>UK</td>
-              </tr>
-              <tr>
-                <td>Sheldon</td>
-                <td>Cooper</td>
-                <td>USA</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Condensed</b></h3>
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tony</td>
+                  <td>Stark</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Walter</td>
+                  <td>White</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Sherlock</td>
+                  <td>Holmes</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Sheldon</td>
+                  <td>Cooper</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><b>Contextual</b></h3>
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Country</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="success">
-                <td>Tony</td>
-                <td>Stark</td>
-                <td>USA</td>
-              </tr>
-              <tr class="danger">
-                <td>Walter</td>
-                <td>White</td>
-                <td>USA</td>
-              </tr>
-              <tr class="warning">
-                <td>Sherlock</td>
-                <td>Holmes</td>
-                <td>UK</td>
-              </tr>
-              <tr class="info">
-                <td>Sheldon</td>
-                <td>Cooper</td>
-                <td>USA</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3><b>Contextual</b></h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>Tony</td>
+                  <td>Stark</td>
+                  <td>USA</td>
+                </tr>
+                <tr class="danger">
+                  <td>Walter</td>
+                  <td>White</td>
+                  <td>USA</td>
+                </tr>
+                <tr class="warning">
+                  <td>Sherlock</td>
+                  <td>Holmes</td>
+                  <td>UK</td>
+                </tr>
+                <tr class="info">
+                  <td>Sheldon</td>
+                  <td>Cooper</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <hr>
-      <h2><b>Color Swatches</b></h2><br>
+      <div id="color-swatches">
+        <h2><b>Color Swatches</b></h2><br>
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="well well-sm"></div>
+            <div class="well well-sm"></div>
+          </div>
+          <div class="col-lg-2">
+            <div class="well well-sm"></div>
+            <div class="well well-sm"></div>
+          </div>
+          <div class="col-lg-2">
+            <div class="well well-sm"></div>
+            <div class="well well-sm"></div>
+          </div>
+          <div class="col-lg-2">
+            <div class="well well-sm"></div>
+            <div class="well well-sm"></div>
+          </div>
+          <div class="col-lg-2">
+            <div class="well well-sm"></div>
+            <div class="well well-sm"></div>
+          </div>
+          <div class="col-lg-2">
+            <div class="well well-sm"></div>
+            <div class="well well-sm"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><hr>
+  <div class="container">
+    <div class="footer">
       <div class="row">
-        <div class="col-lg-2">
-          <div class="well well-sm"></div>
-          <div class="well well-sm"></div>
-        </div>
-        <div class="col-lg-2">
-          <div class="well well-sm"></div>
-          <div class="well well-sm"></div>
-        </div>
-        <div class="col-lg-2">
-          <div class="well well-sm"></div>
-          <div class="well well-sm"></div>
-        </div>
-        <div class="col-lg-2">
-          <div class="well well-sm"></div>
-          <div class="well well-sm"></div>
-        </div>
-        <div class="col-lg-2">
-          <div class="well well-sm"></div>
-          <div class="well well-sm"></div>
-        </div>
-        <div class="col-lg-2">
-          <div class="well well-sm"></div>
-          <div class="well well-sm"></div>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <iframe src="http://ghbtns.com/github-btn.html?user=sudharti&repo=medium-slider.js&type=fork&count=true"
+          allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+          <iframe src="http://ghbtns.com/github-btn.html?user=sudharti&repo=medium-slider.js&type=watch&count=true"
+          allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+          <iframe src="http://ghbtns.com/github-btn.html?user=sudharti&type=follow"
+          allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
+          
+          <a class="twitter-share-button"
+            href="https://twitter.com/share"
+            data-via="sudharshan_iyer">Tweet</a>
+          <div class="g-plusone" data-size="medium"></div>
         </div>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="dist/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="dist/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+  </script>
+  <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
