@@ -1,3 +1,26 @@
+.landing-text {
+  color: #fff;
+}
+
+.landing-text h1 {
+  font-size: 3.5rem;
+}
+
+.sub-text {
+  font-size: 2.45rem;
+  font-weight: 300;
+}
+
+.landing-text p {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.landing-text a {
+  font-weight: 600;
+  color: #fff;
+}
+
 #new-micropost {
   padding: 20px;
 }
