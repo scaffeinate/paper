@@ -1,0 +1,38 @@
+body {
+  background-color: #f0f0f0;  
+}
+
+#login input[type='text'],
+#login input[type='email'],
+#login input[type='password'] {
+  border: 2px solid #ccc;
+  margin-top: 25px;
+  padding: 20px 15px;
+}
+
+#login input[type='text']:focus,
+#login input[type='email']:focus,
+#login input[type='password']:focus {
+  border: 2px solid #505050;
+}
+
+#login button {
+  margin-top: 15px;
+  padding: 6px;
+  font-weight: normal;
+  font-size: 1.75rem;
+}
+
+#login h3 {
+  font-weight: 600;
+  color: #505050;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  display: block;
+  margin-top: 10px;
+}
