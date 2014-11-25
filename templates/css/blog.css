@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+}
+.left-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('../../img/background-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.logo a{
+  color: #fff;
+  font-weight: 800;
+  border: 4px solid #fff;
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 2.75rem;
+  text-decoration: none;
+}
+
+.logo:hover {
+  display: inline-block;
+  background-color: #505050;
+}
+
+.right-relative {
+  position: absolute;
+  right: 0;
+  padding-right: 5%;
+}
+
+#posts {
+   margin-top: 50px;
+}
+
+.post {
+  padding: 15px 0px;
+}
+
+.post .title {
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.post .caption {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.post .info {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #808080;
+}
