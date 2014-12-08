@@ -21,6 +21,10 @@
   color: #fff;
 }
 
+.navbar-avatar {
+  width: 20px;
+}
+
 #new-micropost {
   padding: 20px;
 }

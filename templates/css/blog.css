@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.logo:hover {
+.logo a:hover {
   display: inline-block;
   background-color: #505050;
 }
@@ -55,4 +55,10 @@
   font-size: 1.25rem;
   font-weight: normal;
   color: #808080;
+}
+
+.post .avatar {
+  width: 5rem;
+  border-radius: 10rem;
+  margin-top: 10px;
 }
