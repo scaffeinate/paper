@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $.backstretch('../img/background-1.jpg', {speed: 500});
+  $.backstretch('../assets/img/background-1.jpg', {speed: 500});
 });
