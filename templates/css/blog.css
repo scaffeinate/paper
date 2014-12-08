@@ -13,18 +13,21 @@
 }
 
 .logo a{
+  background-color: #303030;
   color: #fff;
   font-weight: 800;
-  border: 4px solid #fff;
+  border: 4px solid #303030;
   display: inline-block;
   padding: 3px 10px;
   font-size: 2.75rem;
+  font-weight: bolder;
   text-decoration: none;
 }
 
 .logo a:hover {
   display: inline-block;
-  background-color: #505050;
+  border: 4px solid #202020;
+  background-color: #202020;
 }
 
 .right-relative {
@@ -57,8 +60,30 @@
   color: #808080;
 }
 
-.post .avatar {
+.avatar, .post .avatar {
   width: 5rem;
   border-radius: 10rem;
   margin-top: 10px;
+}
+
+.avatar {
+  width: 7rem;
+}
+
+.left-fixed .content {
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20rem;
+  margin-left: 5rem;
+  color: white;
+}
+
+.left-fixed .content h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.left-fixed .content h4 {
+  font-size: 1.75rem;
 }
