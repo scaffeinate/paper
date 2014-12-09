@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  background-image: url('../../assets/img/background-1.jpg');
+  background-image: url('../../assets/img/background-3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
@@ -74,7 +74,7 @@
   position: inherit;
   bottom: 0;
   left: 0;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
   margin-left: 5rem;
   color: white;
 }
