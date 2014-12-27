@@ -5401,67 +5401,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-.card {
-  background-color: #fff;
-  border-radius: 0;
-  border: 1px solid #ccc;
-  min-height: 50px; }
-  .card .card-title {
-    font-weight: 700;
-    font-size: 1.75rem;
-    background-color: #ccc;
-    display: block;
-    padding: 10px; }
-
-.cover-pic {
-  height: 125px;
-  position: relative; }
-  .cover-pic .profile-pic {
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    margin-bottom: -30px;
-    width: 63px !important;
-    border: 4px solid #fff; }
-
-.about {
-  margin-top: 40px;
-  line-height: 1.85rem !important;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  text-align: center; }
-
-.name {
-  font-weight: 600;
-  font-size: 1.65rem; }
-
-.username {
-  display: block;
-  font-size: 1.35rem;
-  color: #ccc; }
-
-.micropost {
-  padding: 15px 25px;
-  border-bottom: 1px solid #ccc; }
-  .micropost .post {
-    display: block; }
-
-.footer {
-  padding: 10px;
-  word-wrap: break-word; }
-
-.panel-list {
-  padding-left: 0px;
-  list-style: none; }
-  .panel-list li {
-    padding: 10px; }
-
-.avatar, .cover-pic .profile-pic {
-  width: 35px;
-  /* border-radius: 10em; */
-  /* margin-right: 5px; */ }
-
 body {
   font-family: 'Lato'; }
 

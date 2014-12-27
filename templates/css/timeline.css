@@ -1,0 +1,138 @@
+.navbar-avatar {
+  width: 20px;
+}
+
+.well {
+  padding: 0;
+  border: none;
+}
+
+#new-micropost textarea {
+  resize: none;
+  max-height: 100px;
+}
+
+#location {
+  margin-top: 20px;
+}
+
+#suggestions .name, #suggestions .username {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#suggestions .name {
+  color: #000;
+}
+
+#suggestions {
+  line-height: 1.5rem;
+}
+
+#suggestions ul > li {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+#suggestions ul > li:hover {
+  background-color: #f4f4f4;
+}
+
+.micropost {
+  padding: 20px;
+}
+
+.micropost .avatar {
+  border-radius: 10rem;
+  width: 40px;
+}
+
+.micropost .name {
+  font-weight: 700;
+  font-size: 1.35rem;
+  display: inline;
+}
+
+.micropost .username {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #888;
+  display: inline;
+}
+
+.micropost .mention {
+  font-weight: 700; 
+  color: #019c70;
+}
+
+.micropost .post {
+  margin-top: 5px;
+}
+
+.micropost .time {
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.micropost .hashtags {
+  color: #4285f4;
+  cursor: pointer;
+}
+
+#microposts {
+  margin-bottom: 40px;
+}
+
+.cover-pic {
+  height: 125px;
+  position: relative;
+}
+
+.cover-pic .profile-pic {
+  width: 35px;
+  border-radius: 10rem;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  margin-bottom: -30px;
+  width: 63px !important;
+  border: 4px solid #fff;
+}
+
+.about {
+  margin-top: 40px;
+  line-height: 1.85rem !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.65rem;
+}
+.username {
+  display: block;
+  font-size: 1.35rem;
+  color: #ccc;
+}
+
+.footer {
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.panel-list {
+  padding-left: 0px;
+  list-style: none;
+  li {
+    padding: 10px;
+  }
+}
+
+.avatar {
+  width: 35px;
+  /* border-radius: 10em; */
+  /* margin-right: 5px; */
+}

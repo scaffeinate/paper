@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../dist/css/vendor/font-awesome.min.css">
   <link rel="stylesheet" href="../dist/css/paper.css">
   <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/timeline.css">
 </head>
 <body>
   <nav class="navbar navbar-default navbar-inverse" role="navigation">
@@ -59,7 +60,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <div class="card">
+        <div class="well">
           <div class="cover-pic">
             <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="" class="profile-pic">
           </div>
@@ -70,20 +71,24 @@
             <label id="location"><i class="fa fa-map-marker"></i> Albuquerque, New Mexico</label>
           </div>
         </div><br>
-        <div class="card">
-          <span class="card-title">Trends</span>
-          <ul class="panel-list">
-            <li><a href="#">#Meth</a></li>
-            <li><a href="#">#Heisenberg</a></li>
-            <li><a href="#">#LosPollos</a></li>
-            <li><a href="#">#Crystal</a></li>
-            <li><a href="#">#DEA</a></li>
-          </ul>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Trends</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="panel-list">
+              <li><a href="#">#Meth</a></li>
+              <li><a href="#">#Heisenberg</a></li>
+              <li><a href="#">#LosPollos</a></li>
+              <li><a href="#">#Crystal</a></li>
+              <li><a href="#">#DEA</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="card">
-          <div id="new-micropost">
+        <div class="panel panel-default">
+          <div id="new-micropost" class="panel-body">
             <form role="form">
               <div class="form-group">
                 <textarea rows="1" cols="10" class="form-control" placeholder="Compose Micropost"></textarea>
@@ -91,12 +96,12 @@
               <button id="share" class="btn btn-success">Share</button>
             </form>
           </div>
-        </div><br>
-        <div id="microposts" class="card">
+        </div>
+        <div id="microposts" class="well">
           <div id="post-2912915" class="micropost">
             <div class="row">
               <div class="col-lg-1">
-                <img src="../img/avatar-1.png" alt="" class="avatar">
+                <img src="img/avatar.png" alt="" class="avatar">
               </div>
               <div class="col-lg-9">
                 <span class="name">Walter White</span>
@@ -105,7 +110,7 @@
                   <span class="mention">@random_guy</span>  You are Godamn Right!
                   <span class="hashtags">#Heisenberg</span>
                 </div>
-                
+
               </div>
               <div class="col-lg-2">
                 <span class="time">4 mins</span>
@@ -113,9 +118,9 @@
             </div>
           </div>
           <div id="post-2912914" class="micropost">
-          <div class="row">
+            <div class="row">
               <div class="col-lg-1">
-                <img src="../img/avatar-2.png" alt="" class="avatar">
+                <img src="img/avatar_2.png" alt="" class="avatar">
               </div>
               <div class="col-lg-9">
                 <span class="name">Jesse Pinkman</span>
@@ -130,7 +135,7 @@
           <div id="post-2912913" class="micropost">
             <div class="row">
               <div class="col-lg-1">
-                <img src="../img/avatar-2.png" alt="" class="avatar">
+                <img src="img/avatar_3.png" alt="" class="avatar">
               </div>
               <div class="col-lg-9">
                 <span class="name">Jesse Pinkman</span>
@@ -145,7 +150,7 @@
           <div id="post-2912912" class="micropost">
             <div class="row">
               <div class="col-lg-1">
-                <img src="../img/avatar-3.png" alt="" class="avatar">
+                <img src="img/avatar_4.png" alt="" class="avatar">
               </div>
               <div class="col-lg-9">
                 <span class="name">Gus Fring</span>
@@ -153,190 +158,194 @@
                 <div class="post">
                   Would you like to fill out a feedback? I would be happy to refer to our website. 
                   <span class="hashtags">#LosPollos</span></div>
-              </div>
-              <div class="col-lg-2">
-                <span class="time">13 mins</span>
-              </div>
-            </div>
-          </div>
-          <div id="post-2912911" class="micropost">
-            <div class="row">
-              <div class="col-lg-1">
-                <img src="../img/avatar-1.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9">
-                <span class="name">Walter White</span>
-                <span class="username">@heisenberg</span>
-                <div class="post">
-                  <span class="mention">@random_guy</span> 
-                  Say my name!
+                </div>
+                <div class="col-lg-2">
+                  <span class="time">13 mins</span>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <span class="time">14 mins</span>
-              </div>
             </div>
-          </div>
-          <div id="post-2912910" class="micropost">
-            <div class="row">
-              <div class="col-lg-1">
-                <img src="../img/avatar-4.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9">
-                <span class="name">Hank Schrader</span>
-                <span class="username">@asac_schrader</span>
-                <div class="post">
-                  <span class="mention">@jack</span> 
-                  My name is ASAC Schrader. And you can go f*** yourself. 
-                  <span class="hashtags">#DEA #Heisenberg</span>
+            <div id="post-2912911" class="micropost">
+              <div class="row">
+                <div class="col-lg-1">
+                  <img src="img/avatar.png" alt="" class="avatar">
+                </div>
+                <div class="col-lg-9">
+                  <span class="name">Walter White</span>
+                  <span class="username">@heisenberg</span>
+                  <div class="post">
+                    <span class="mention">@random_guy</span> 
+                    Say my name!
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <span class="time">14 mins</span>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <span class="time">15 mins</span>
-              </div>
             </div>
-          </div>
-          <div id="post-2912909" class="micropost">
-            <div class="row">
-              <div class="col-lg-1">
-                <img src="../img/avatar-2.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9">
-                <span class="name">Jesse Pinkman</span>
-                <span class="username">@science_btch</span>
-                <div class="post">
-                  <span class="mention">@heisenberg</span> 
-                  This is absolute genius!
-                  <span class="hashtags">#Meth #Crystal</span>
+            <div id="post-2912910" class="micropost">
+              <div class="row">
+                <div class="col-lg-1">
+                  <img src="img/avatar_4.png" alt="" class="avatar">
+                </div>
+                <div class="col-lg-9">
+                  <span class="name">Hank Schrader</span>
+                  <span class="username">@asac_schrader</span>
+                  <div class="post">
+                    <span class="mention">@jack</span> 
+                    My name is ASAC Schrader. And you can go f*** yourself. 
+                    <span class="hashtags">#DEA #Heisenberg</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <span class="time">15 mins</span>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <span class="time">18 mins</span>
-              </div>
             </div>
-          </div>
-          <div id="post-2912908" class="micropost">
-            <div class="row">
-              <div class="col-lg-1">
-                <img src="../img/avatar-1.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9">
-                <span class="name">Walter White</span>
-                <span class="username">@heisenberg</span>
-                <div class="post">
-                  <span class="mention">@asac_schrader</span> 
-                  If you do not know who I am ... then maybe your best course...would be to #Tread #Lightly.
+            <div id="post-2912909" class="micropost">
+              <div class="row">
+                <div class="col-lg-1">
+                  <img src="img/avatar_2.png" alt="" class="avatar">
+                </div>
+                <div class="col-lg-9">
+                  <span class="name">Jesse Pinkman</span>
+                  <span class="username">@science_btch</span>
+                  <div class="post">
+                    <span class="mention">@heisenberg</span> 
+                    This is absolute genius!
+                    <span class="hashtags">#Meth #Crystal</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <span class="time">18 mins</span>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <span class="time">19 mins</span>
-              </div>
             </div>
-          </div>
-          <div id="post-2912907" class="micropost">
-            <div class="row">
-              <div class="col-lg-1">
-                <img src="../img/avatar-4.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9">
-                <span class="name">Hank Schrader</span>
-                <span class="username">@asac_schrader</span>
-                <div class="post">
-                  <span class="mention">@heisenberg</span> 
-                  I don't know who you are.
+            <div id="post-2912908" class="micropost">
+              <div class="row">
+                <div class="col-lg-1">
+                  <img src="img/avatar_3.png" alt="" class="avatar">
+                </div>
+                <div class="col-lg-9">
+                  <span class="name">Walter White</span>
+                  <span class="username">@heisenberg</span>
+                  <div class="post">
+                    <span class="mention">@asac_schrader</span> 
+                    If you do not know who I am ... then maybe your best course...would be to #Tread #Lightly.
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <span class="time">19 mins</span>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <span class="time">20 mins</span>
+            </div>
+            <div id="post-2912907" class="micropost">
+              <div class="row">
+                <div class="col-lg-1">
+                  <img src="img/avatar.png" alt="" class="avatar">
+                </div>
+                <div class="col-lg-9">
+                  <span class="name">Hank Schrader</span>
+                  <span class="username">@asac_schrader</span>
+                  <div class="post">
+                    <span class="mention">@heisenberg</span> 
+                    I don't know who you are.
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <span class="time">20 mins</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <div id="suggestions" class="card">
-          <span class="card-title">Suggestions</span>
-          <ul class="panel-list">
-            <li>
-              <a href="#">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <img src="../img/avatar-1.png" alt="" class="avatar">
-                  </div>
-                  <div class="col-lg-10">
-                    <span class="name">Walter White</span>
-                    <span class="username">@the_real_heisenberg</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <img src="../img/avatar-2.png" alt="" class="avatar">
-                  </div>
-                  <div class="col-lg-10">
-                    <span class="name">Jesse Pinkman</span>
-                    <span class="username">@science_btch</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <img src="../img/avatar-3.png" alt="" class="avatar">
-                  </div>
-                  <div class="col-lg-10">
-                    <span class="name">Gus Fring</span>
-                    <span class="username">@gus</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <img src="../img/avatar-4.png" alt="" class="avatar">
-                  </div>
-                  <div class="col-lg-10">
-                    <span class="name">Hank Schrader</span>
-                    <span class="username">@asac_schradder</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <img src="../img/avatar-5.png" alt="" class="avatar">
-                  </div>
-                  <div class="col-lg-10">
-                    <span class="name">Skyler White</span>
-                    <span class="username">@skyler</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="footer">
-            <label>© 2014 Author Blog Social-UI About Github Getting Started License</label>
+        <div class="col-lg-3">
+          <div id="suggestions" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Suggestions</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="panel-list">
+                <li>
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-lg-2">
+                        <img src="../img/avatar-1.png" alt="" class="avatar">
+                      </div>
+                      <div class="col-lg-10">
+                        <span class="name">Walter White</span>
+                        <span class="username">@the_real_heisenberg</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-lg-2">
+                        <img src="../img/avatar-2.png" alt="" class="avatar">
+                      </div>
+                      <div class="col-lg-10">
+                        <span class="name">Jesse Pinkman</span>
+                        <span class="username">@science_btch</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-lg-2">
+                        <img src="../img/avatar-3.png" alt="" class="avatar">
+                      </div>
+                      <div class="col-lg-10">
+                        <span class="name">Gus Fring</span>
+                        <span class="username">@gus</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-lg-2">
+                        <img src="../img/avatar-4.png" alt="" class="avatar">
+                      </div>
+                      <div class="col-lg-10">
+                        <span class="name">Hank Schrader</span>
+                        <span class="username">@asac_schradder</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-lg-2">
+                        <img src="../img/avatar-5.png" alt="" class="avatar">
+                      </div>
+                      <div class="col-lg-10">
+                        <span class="name">Skyler White</span>
+                        <span class="username">@skyler</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="footer">
+              <label>© 2014 Author Blog Social-UI About Github Getting Started License</label>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
-  <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-  <script type="text/javascript" src="js/jquery.autosize.min.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script>
-</body>
-</html>
+    <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autosize.min.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+  </body>
+  </html>
