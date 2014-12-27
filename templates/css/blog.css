@@ -37,7 +37,7 @@
 }
 
 #posts {
-   margin-top: 50px;
+ margin-top: 50px;
 }
 
 .post {
@@ -86,4 +86,19 @@
 
 .left-fixed .content h4 {
   font-size: 1.75rem;
+}
+
+@media(max-width:992px) {
+  .left-fixed {
+    position: relative;
+    background-image: url('../../assets/img/background-3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+
+  .right-relative {
+    position: relative;
+    padding: 10px 50px;
+  }
 }
