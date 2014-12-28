@@ -14,12 +14,17 @@
   font-size: 1.75rem;
 }
 
+.dropdown li {
+  border-bottom: 1px solid #c0c0c0;
+}
+
 .well {
   padding: 0;
   border: none;
 }
 
 #new-micropost textarea {
+  border: 2px solid #ccc;
   resize: none;
   max-height: 100px;
 }
@@ -51,7 +56,7 @@
   display: inline;
 }
 
-.micropost .mention {
+.mention {
   font-weight: 700; 
   color: #019c70;
 }
@@ -67,10 +72,14 @@
   font-weight: 700;
 }
 
-.micropost .hashtags {
+.hashtags {
   color: #4285f4;
   cursor: pointer;
   font-weight: bold;
+}
+
+.link {
+  color: #4285f4;
 }
 
 #microposts {
