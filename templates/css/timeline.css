@@ -166,3 +166,24 @@
   border: 1px solid #c0c0c0;
   border-radius: 10em;
 }
+
+.actions {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.actions a {
+  color: #888;
+  font-size: 1.75rem;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.actions a:hover {
+  color: #4285f4;
+}
+
+.actions i.disabled {
+  color: #ccc;
+  cursor: default;
+}
