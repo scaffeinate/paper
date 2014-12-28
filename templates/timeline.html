@@ -29,85 +29,50 @@
             <a id="notification" href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
             </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-title">
-                <h5><b>Notifications</b></h5>
-              </li>
-              <li>
-                <a href="#">
-                  <h5><b>New Post</b></h5>
-                  <span class="mention">@rails_freak</span> <span>shared a new micropost<br>
-                    <span>Ruby on Rails is Awesome!</span> <span class="link">p.co/RoRawsme</span> 
-                    <span class="hashtags">#Rails</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h5><b>@Mention</b></h5>
-                  <span class="mention">@rails_freak</span>
-                  <span>mentioned you in a micropost</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h5><b>Trends</b></h5>
-                  <span class="hashtags">#Rails</span>
-                  <span> - Topic you are following is trending!</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h5><b>Followers</b></h5>
-                  <span>Yay!</span> <span class="mention">@rails_freak</span> 
-                  <span>and</span>
-                  <span class="mention">@Dev</span> 
-                  <span>followed you</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-center">
-                  <span><b><i class="fa fa-bars"></i> More</b></span>
-                </a>
-              </li>
+            <ul id="notifications" class="dropdown-menu" role="menu">
+              <script id="notifications-template" type="text/x-handlebars-template">
+                <li class="dropdown-title">
+                  <h5><b>Notifications</b></h5>
+                </li>
+                {{#each notifications}}
+                  <li>
+                    <a href="#">
+                      <h5><b>{{title}}</b></h5>
+                      {{{post}}}
+                    </a>
+                  </li>
+                {{/each}}
+                <li>
+                  <a href="#" class="text-center">
+                    <span><b><i class="fa fa-bars"></i> More</b></span>
+                  </a>
+                </li>
+              </script>
             </ul>
           </li>
           <li class="dropdown">
             <a id="inbox" href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
               <i class="fa fa-inbox"></i>
             </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-title">
-                <h5><b>Messages</b></h5>
-              </li>
-              <li>
-                <a href="#">
-                  <h6><b>@rails_freak</b></h6>
-                  <span>Hey! Checkout my new post. Thanks!</span> <span class="link">p.co/RoRawsme</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6><b>@blogaholic</b></h6>
-                  <span>Hey man! Wassup?</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6><b>@uiux_</b></h6>
-                  <span>Medium's UI is f***ing awesome</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6><b>@Dev</b></h6>
-                  <span>What's your view on Websockets? Let me know</span>
-                </a>
-              </li>
-               <li>
-                <a href="#" class="text-center">
-                  <span><b><i class="fa fa-bars"></i> More</b></span>
-                </a>
-              </li>
+            <ul id="messages" class="dropdown-menu" role="menu">
+              <script id="messages-template" type="text/x-handlebars-template">
+                <li class="dropdown-title">
+                  <h5><b>Messages</b></h5>
+                </li>
+                {{#each messages}}
+                  <li>
+                    <a href="#">
+                      <h6><b>{{user}}</b></h6>
+                      {{{message}}}
+                    </a>
+                  </li>
+                {{/each}}
+                <li>
+                  <a href="#" class="text-center">
+                    <span><b><i class="fa fa-bars"></i> More</b></span>
+                  </a>
+                </li>
+              </script>
             </ul>
           </li>
           <li>
@@ -145,12 +110,12 @@
             <h3 class="panel-title"><b>Trends</b></h3>
           </div>
           <div class="panel-body">
-            <ul class="panel-list">
-              <li><a href="#">#Theme</a></li>
-              <li><a href="#">#Bootstrap</a></li>
-              <li><a href="#">#Rails</a></li>
-              <li><a href="#">#Blog</a></li>
-              <li><a href="#">#Javascript</a></li>
+            <ul id="trends" class="panel-list">
+              <script id="trends-template" type="text/x-handlebars-template">
+                {{#each trends}}
+                  <li><a href="#">{{trend}}</a></li>
+                {{/each}}
+              </script>
             </ul>
           </div>
         </div>
@@ -169,401 +134,95 @@
           </div>
         </div>
         <div id="microposts" class="well">
-          <div id="post-2912915" class="micropost">
-            <div class="row">
-              <div class="col-lg-1 col-md-1 col-xs-1">
-                <img src="img/avatar.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9 col-md-11 col-xs-11">
-                <span class="name">Blogaholic</span>
-                <span class="username">@blogaholic</span>
-                <div class="post"> 
-                  Building a Bootstrap Theme - Awesome post by <span class="mention">@uiux_</span>
-                  <a href="#">p.co/btstrpThm</a>
-                  <span class="hashtags">#Theme #Bootstrap</span>
+          <script id="microposts-template" type="text/x-handlebars-template">
+            {{#each microposts}}
+              <div class="micropost">
+                <div class="row">
+                  <div class="col-lg-1 col-md-1 col-xs-1">
+                    <img src={{avatar}} alt={{avatar}} class="avatar">
+                  </div>
+                  <div class="col-lg-9 col-md-11 col-xs-11">
+                    <span class="name">{{name}}</span>
+                    <span class="username">{{username}}</span>
+                    <div class="post"> 
+                      {{{post}}}
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
+                    <span class="time">{{time}}</span>
+                  </div>
+                </div>
+                <div class="row actions">
+                  <div class="col-lg-11 col-lg-offset-1">
+                    <a href="#">
+                      <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-retweet"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-heart"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                <span class="time">4 mins</span>
-              </div>
-            </div>
-            <div class="row actions">
-              <div class="col-lg-11 col-lg-offset-1">
-                <a href="#">
-                  <i class="fa fa-arrow-left"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-retweet"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-heart"></i>
-                </a>
-              </div>
-            </div>
+            {{/each}}
+          </script>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b>Suggestions</b></h3>
           </div>
-          <div id="post-2912914" class="micropost">
-            <div class="row">
-              <div class="col-lg-1 col-md-1 col-xs-1">
-                <img src="img/avatar_2.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9 col-md-11 col-xs-11">
-                <span class="name">UI UX Guy</span>
-                <span class="username">@uiux_</span>
-                <div class="post">Published my post on Building a Bootstrap Theme <a href="#">p.co/btstrpThm</a></div>
-              </div>
-              <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                <span class="time">7 mins</span>
-              </div>
-            </div>
-            <div class="row actions">
-              <div class="col-lg-11 col-lg-offset-1">
-                <a href="#">
-                  <i class="fa fa-arrow-left"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-retweet"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-heart"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div id="post-2912913" class="micropost">
-            <div class="row">
-              <div class="col-lg-1 col-md-1 col-xs-1">
-                <img src="img/avatar_3.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9 col-md-11 col-xs-11">
-                <span class="name">Rails Freak</span>
-                <span class="username">@rails_freak</span>
-                <div class="post">Ruby on Rails is Awesome! <a href="#">p.co/RoRawsme</a> <span class="hashtags">#Rails</span></div>
-              </div>
-              <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                <span class="time">9 mins</span>
-              </div>
-            </div>
-            <div class="row actions">
-              <div class="col-lg-11 col-lg-offset-1">
-                <a href="#">
-                  <i class="fa fa-arrow-left"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-retweet"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-heart"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div id="post-2912912" class="micropost">
-            <div class="row">
-              <div class="col-lg-1 col-md-1 col-xs-1">
-                <img src="img/avatar_4.png" alt="" class="avatar">
-              </div>
-              <div class="col-lg-9 col-md-11 col-xs-11">
-                <span class="name">Developer</span>
-                <span class="username">@Dev</span>
-                <div class="post">
-                  Websockets are future tech - We aren't there yet! 
-                  <span class="hashtags">#Websockets #Javascript</span></div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">13 mins</span>
-                </div>
-              </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
-                  <a href="#">
-                    <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-retweet"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-heart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id="post-2912911" class="micropost">
-              <div class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1">
-                  <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="" class="avatar">
-                </div>
-                <div class="col-lg-9 col-md-11 col-xs-11">
-                  <span class="name">Sudharsanan M</span>
-                  <span class="username">@sudharti</span>
-                  <div class="post">
-                    Why should you do Side Projects <a href="#">p.co/wsydSPr</a>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">14 mins</span>
-                </div>
-              </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
-                  <a href="#">
-                    <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-retweet disabled"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-heart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id="post-2912910" class="micropost">
-              <div class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1">
-                  <img src="img/avatar_4.png" alt="" class="avatar">
-                </div>
-                <div class="col-lg-9 col-md-11 col-xs-11">
-                  <span class="name">Developer</span>
-                  <span class="username">@Dev</span>
-                  <div class="post">
-                    Awesome Read - How maintaining a Blog saved my ass <a href="#">p.co/hmBsAs</a>
-                    <span class="hashtags">#Blog</span>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">15 mins</span>
-                </div>
-              </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
-                  <a href="#">
-                    <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-retweet"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-heart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id="post-2912909" class="micropost">
-              <div class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1">
-                  <img src="img/avatar_2.png" alt="" class="avatar">
-                </div>
-                <div class="col-lg-9 col-md-11 col-xs-11">
-                  <span class="name">UI UX Guy</span>
-                  <span class="username">@uiux_</span>
-                  <div class="post">
-                    Medium's theme is so f**cking good. <a href="#">p.co/mdmThfg</a>
-                    <span class="hashtags">#Medium #CSS</span>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">18 mins</span>
-                </div>
-              </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
-                  <a href="#">
-                    <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-retweet"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-heart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id="post-2912908" class="micropost">
-              <div class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1">
-                  <img src="img/avatar_3.png" alt="" class="avatar">
-                </div>
-                <div class="col-lg-9 col-md-11 col-xs-11">
-                  <span class="name">Rails Freak</span>
-                  <span class="username">@rails_freak</span>
-                  <div class="post">
-                    RT <span class="mention">@sudharti</span> 
-                    Front-End Javascript frameworks are clearly the future!
-                    <span class="hashtags">#Javascript</span>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">19 mins</span>
-                </div>
-              </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
-                  <a href="#">
-                    <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-retweet"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-heart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id="post-2912907" class="micropost">
-              <div class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1">
-                  <img src="img/avatar.png" alt="" class="avatar">
-                </div>
-                <div class="col-lg-9 col-md-11 col-xs-11">
-                  <span class="name">Blogaholic</span>
-                  <span class="username">@blogaholic</span>
-                  <div class="post">
-                    How maintaining a Blog saved my ass <a href="#">p.co/hmBsAs</a>
-                    <span class="hashtags">#Blog</span>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">20 mins</span>
-                </div>
-              </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
-                  <a href="#">
-                    <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-retweet"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-heart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="panel-body">
+            <ul id="suggestions" class="panel-list">
+              <script id="suggestions-template" type="text/x-handlebars-template">
+                {{#each suggestions}}
+                  <li>
+                    <a href="#">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-xs-2">
+                          <img src={{avatar}} alt="" class="avatar">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-xs-3">
+                          <span class="name">{{name}}</span>
+                          <span class="username">{{username}}</span>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
+                          <button class="btn btn-success btn-sm">
+                            Follow
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                {{/each}}
+              </script>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4">
-          <div id="suggestions" class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title"><b>Suggestions</b></h3>
-            </div>
-            <div class="panel-body">
-              <ul class="panel-list">
-                <li>
-                  <a href="#">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-xs-2">
-                        <img src="img/avatar.png" alt="" class="avatar">
-                      </div>
-                      <div class="col-lg-5 col-md-5 col-xs-3">
-                        <span class="name">Bootstrap</span>
-                        <span class="username">@bootstrap</span>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
-                        <button class="btn btn-success btn-sm">
-                          Follow
-                        </button>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-xs-2">
-                        <img src="img/avatar_4.png" alt="" class="avatar">
-                      </div>
-                      <div class="col-lg-5 col-md-5 col-xs-3">
-                        <span class="name">Dev</span>
-                        <span class="username">@dev_</span>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
-                        <button class="btn btn-success btn-sm">
-                          Follow
-                        </button>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-xs-2">
-                        <img src="img/avatar_2.png" alt="" class="avatar">
-                      </div>
-                      <div class="col-lg-5 col-md-5 col-xs-3">
-                        <span class="name">User123</span>
-                        <span class="username">@user123</span>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
-                        <button class="btn btn-success btn-sm">
-                          Follow
-                        </button>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-xs-2">
-                        <img src="img/avatar_3.png" alt="" class="avatar">
-                      </div>
-                      <div class="col-lg-5 col-md-5 col-xs-3">
-                        <span class="name">Rails</span>
-                        <span class="username">@rails</span>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
-                        <button class="btn btn-success btn-sm">
-                          Follow
-                        </button>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-xs-2">
-                        <img src="img/avatar_3.png" alt="" class="avatar">
-                      </div>
-                      <div class="col-lg-5 col-md-5 col-xs-3">
-                        <span class="name">Ruby User's Group</span>
-                        <span class="username">@ruby_group</span>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
-                        <button class="btn btn-success btn-sm">
-                          Follow
-                        </button>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="well">
-            <div class="footer">
-              <h5><b>Paper</b></h5>
-              <a href="#">Author</a> 
-              <a href="#">Blog</a> 
-              <a href="#">Paper</a> 
-              <a href="#">About</a> 
-              <a href="#">Github</a> 
-              <a href="#">Getting Started</a> 
-              <a href="#">License</a>
-            </div>
+        <div class="well">
+          <div class="footer">
+            <h5><b>Paper</b></h5>
+            <a href="#">Author</a> 
+            <a href="#">Blog</a> 
+            <a href="#">Paper</a> 
+            <a href="#">About</a> 
+            <a href="#">Github</a> 
+            <a href="#">Getting Started</a> 
+            <a href="#">License</a>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
+    
     <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v2.0.0.js"></script>
     <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="js/jquery.autosize.min.js"></script>
-    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript" src="js/timeline.js"></script>
   </body>
   </html>
