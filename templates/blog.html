@@ -17,8 +17,8 @@
         <h2 class="logo"><a href="/">P</a></h2>
         <div class="content">
           <h1 class="title"><b>Paper</b></h1>
-          <h4><b>Simple, Elegant & Flat Bootstrap Theme</b></h4>
-          <p>Built with Bootstrap & Sass</p>
+          <h4><b>Simple, Elegant &amp; Flat Bootstrap Theme</b></h4>
+          <p>Built with Bootstrap &amp; Sass</p>
           <br><button class="btn btn-success">Start Writing</button>
           <br><br>
         </div>
@@ -26,204 +26,47 @@
       <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 right-relative">
         <div class="row">
           <div id="posts">
-            <h2><b>Posts</b></h2>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Why should you do Side Projects</h3>
+            <script id="posts-template" type="text/x-handlebars-template">
+              <h2><b>Posts</b></h2>
+              {{#each posts}}
+              <div class="post">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h3 class="title">{{title}}</h3>
+                  </div>
+                  <div class="col-lg-2">
+                    <img src={{avatar}} class="avatar" alt={{avatar}}>
+                  </div>
                 </div>
-                <div class="col-lg-2">
-                  <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png"
-                  class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">The Power of Side Projects and the Impact it has on your Career</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @sudharti</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>seconds ago</h6>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h5 class="caption">{{caption}}</h5>
+                    <div class="row info">
+                      <div class="col-lg-4">
+                        <h6>published by {{author}}</h6>
+                      </div>
+                      <div class="col-lg-4 col-lg-offset-4">
+                        <h6>{{time}}</h6>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Ruby on Rails is Awesome!</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="img/avatar_3.png" class="avatar" alt="">
-                </div>
+              {{/each}}
+              <br><br>
+              <div class="text-center">
+                <button class="btn btn-default">Load More</button>
               </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">RoR is one of the best MVC frameworks out there. Just hop on and start developing</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @rails_freak</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>4 hours ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Building a Bootstrap Theme</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="img/avatar_2.png" class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">Bootstrap is beautiful. But it is even more if you could build your own on top of it</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @uiux_</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>5 hours ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Medium's theme is so f**cking good.</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="img/avatar_2.png" class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">Medium's theme is the best CSS I have seen in my entire career. Hands down!</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @uiux_</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>5 hours ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Front-End Javascript frameworks are clearly the future!</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png"
-                  class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">How I think Emberjs and Angularjs will have an impact on the Web in the near future</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @sudharti</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>5 hours ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">How maintaining a Blog saved my ass</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="img/avatar.png" class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">Literally saved my ass many times. You should start Blogging too. Here is why</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @blogaholic</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>6 hours ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Websockets are future tech - We aren't there yet!</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="img/avatar_4.png" class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">We aren't there yet!</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @Dev</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>2 days ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h3 class="title">Server Deployment is a Pain in the Ass, Unless...</h3>
-                </div>
-                <div class="col-lg-2">
-                  <img src="img/avatar_4.png" class="avatar" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h5 class="caption">It used to drive me nuts initially</h5>
-                  <div class="row info">
-                    <div class="col-lg-4">
-                      <h6>published by @Dev</h6>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-4">
-                      <h6>3 days ago</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <br><br>
+            </script>
           </div>
-          <br><br>
-          <div class="text-center">
-            <button class="btn btn-default">Load More</button>
-          </div>
-          <br><br>
         </div>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/handlebars-v2.0.0.js"></script>
+  <script type="text/javascript" src="js/blog.js"></script>
 </body>
 </html>
