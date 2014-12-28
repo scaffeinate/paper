@@ -137,8 +137,16 @@
 .footer {
   padding: 10px;
   word-wrap: break-word;
-  font-size: 1.25rem;
-  font-weight: lighter;
+}
+
+.footer h5 {
+  margin-left: 10px;
+}
+
+.footer a {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  text-decoration: underline;
 }
 
 .panel-list {
