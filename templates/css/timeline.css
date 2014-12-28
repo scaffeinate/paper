@@ -1,5 +1,13 @@
 .navbar-avatar {
-  width: 20px;
+  width: 25px;
+  border-radius: 10rem;
+}
+
+#notification {
+  font-size: 2rem;
+  padding: 15px;
+  color: #505050;
+  margin-right: 15px;
 }
 
 .well {
@@ -16,27 +24,6 @@
   margin-top: 20px;
 }
 
-#suggestions .name, #suggestions .username {
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-#suggestions .name {
-  color: #000;
-}
-
-#suggestions {
-  line-height: 1.5rem;
-}
-
-#suggestions ul > li {
-  border-bottom: 1px solid #f4f4f4;
-}
-
-#suggestions ul > li:hover {
-  background-color: #f4f4f4;
-}
-
 .micropost {
   padding: 20px;
 }
@@ -49,6 +36,7 @@
 .micropost .name {
   font-weight: 700;
   font-size: 1.35rem;
+  margin-left: 20px;
   display: inline;
 }
 
@@ -66,6 +54,7 @@
 
 .micropost .post {
   margin-top: 5px;
+  margin-left: 20px;
 }
 
 .micropost .time {
@@ -126,13 +115,47 @@
 .panel-list {
   padding-left: 0px;
   list-style: none;
-  li {
-    padding: 10px;
-  }
+}
+
+.panel-list li {
+  padding: 5px 10px;
 }
 
 .avatar {
   width: 35px;
-  /* border-radius: 10em; */
-  /* margin-right: 5px; */
+  border-radius: 10rem;
+}
+
+#suggestions .name, #suggestions .username {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#suggestions .name {
+  color: #000;
+}
+
+#suggestions li {
+  margin-top: 5px;
+}
+
+.input-group {
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: 1px solid #c0c0c0;
+  border-right: none;
+  border-radius: 10em;
+}
+
+.input-group input:focus {
+  border: 1px solid #c0c0c0;
+  border-right: none;
+}
+
+.input-group-addon {
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  border-radius: 10em;
 }

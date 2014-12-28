@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/timeline.css">
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -21,21 +21,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a id="logo" class="navbar-brand" href="../index.html">P</a>
+        <a id="logo" class="navbar-brand" href="../index.html">Paper</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <div class="input-group-addon"><i class="fa fa-search"></i></div>
-            </div>
-          </div>
-        </form>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
-              <i class="fa fa-bell"></i>
+            <a id="notification" href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Notification 1</a></li>
@@ -45,7 +37,7 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="navbar-avatar" src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="Profile"><span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="navbar-avatar" src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="Profile"> sudharti <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Profile</a></li>
               <li><a href="#">Settings</a></li>
@@ -53,6 +45,14 @@
             </ul>
           </li>
         </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-addon"><i class="fa fa-search"></i></div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </nav>
@@ -65,15 +65,15 @@
             <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="" class="profile-pic">
           </div>
           <div class="about">
-            <label class="name">Walter White</label>
-            <label class="username">@heisenberg</label>
-            <span>53 | Chemistry Teacher | Criminal Mastermind | Drug Kingpin | Meth</span>
-            <label id="location"><i class="fa fa-map-marker"></i> Albuquerque, New Mexico</label>
+            <label class="name">Sudharsanan M</label>
+            <label class="username">@sudharti</label>
+            <span>22 | Hacker | Technophile | Blogger | Android Dev | Rails Fanboy | Rubyist</span>
+            <label id="location"><i class="fa fa-map-marker"></i> Dallas, Texas</label>
           </div>
         </div><br>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Trends</h3>
+            <h3 class="panel-title"><b>Trends</b></h3>
           </div>
           <div class="panel-body">
             <ul class="panel-list">
@@ -93,7 +93,8 @@
               <div class="form-group">
                 <textarea rows="1" cols="10" class="form-control" placeholder="Compose Micropost"></textarea>
               </div>
-              <button id="share" class="btn btn-success">Share</button>
+              <button id="share" class="btn btn-success">
+              <i class="fa fa-send-o"></i> <b>Share</b></button>
             </form>
           </div>
         </div>
@@ -261,17 +262,17 @@
         <div class="col-lg-3">
           <div id="suggestions" class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Suggestions</h3>
+              <h3 class="panel-title"><b>Suggestions</b></h3>
             </div>
             <div class="panel-body">
               <ul class="panel-list">
                 <li>
                   <a href="#">
                     <div class="row">
-                      <div class="col-lg-2">
-                        <img src="../img/avatar-1.png" alt="" class="avatar">
+                      <div class="col-lg-3">
+                        <img src="img/avatar.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-10">
+                      <div class="col-lg-9">
                         <span class="name">Walter White</span>
                         <span class="username">@the_real_heisenberg</span>
                       </div>
@@ -281,10 +282,10 @@
                 <li>
                   <a href="#">
                     <div class="row">
-                      <div class="col-lg-2">
-                        <img src="../img/avatar-2.png" alt="" class="avatar">
+                      <div class="col-lg-3">
+                        <img src="img/avatar_4.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-10">
+                      <div class="col-lg-9">
                         <span class="name">Jesse Pinkman</span>
                         <span class="username">@science_btch</span>
                       </div>
@@ -294,10 +295,10 @@
                 <li>
                   <a href="#">
                     <div class="row">
-                      <div class="col-lg-2">
-                        <img src="../img/avatar-3.png" alt="" class="avatar">
+                      <div class="col-lg-3">
+                        <img src="img/avatar_2.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-10">
+                      <div class="col-lg-9">
                         <span class="name">Gus Fring</span>
                         <span class="username">@gus</span>
                       </div>
@@ -307,10 +308,10 @@
                 <li>
                   <a href="#">
                     <div class="row">
-                      <div class="col-lg-2">
-                        <img src="../img/avatar-4.png" alt="" class="avatar">
+                      <div class="col-lg-3">
+                        <img src="img/avatar_3.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-10">
+                      <div class="col-lg-9">
                         <span class="name">Hank Schrader</span>
                         <span class="username">@asac_schradder</span>
                       </div>
@@ -320,10 +321,10 @@
                 <li>
                   <a href="#">
                     <div class="row">
-                      <div class="col-lg-2">
-                        <img src="../img/avatar-5.png" alt="" class="avatar">
+                      <div class="col-lg-3">
+                        <img src="img/avatar_4.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-10">
+                      <div class="col-lg-9">
                         <span class="name">Skyler White</span>
                         <span class="username">@skyler</span>
                       </div>
@@ -333,7 +334,7 @@
               </ul>
             </div>
           </div>
-          <div class="card">
+          <div class="well">
             <div class="footer">
               <label>© 2014 Author Blog Social-UI About Github Getting Started License</label>
             </div>
