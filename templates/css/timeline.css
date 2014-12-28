@@ -18,6 +18,12 @@
   border-bottom: 1px solid #c0c0c0;
 }
 
+.dropdown-title {
+  background-color: #f0f0f0;
+  padding: 5px 20px;
+  cursor: default;
+}
+
 .well {
   padding: 0;
   border: none;
@@ -27,6 +33,10 @@
   border: 2px solid #ccc;
   resize: none;
   max-height: 100px;
+}
+
+#new-micropost textarea:focus {
+  border: 2px solid #000;
 }
 
 #location {
