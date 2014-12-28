@@ -30,8 +30,23 @@
               <i class="fa fa-bell-o"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Notification 1</a></li>
-              <li><a href="#">Notification 2</a></li>
+              <li>
+                <a href="#">
+                  <h5><b>New Post</b></h5>
+                  <span>
+                    @rails_freak shared a new micropost<br>
+                    Ruby on Rails is Awesome! p.co/RoRawsme #Rails
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h5><b>@Mention</b></h5>
+                  <span>
+                    @rails_freak mentioned you in a micropost      
+                  </span>
+                </a>
+              </li>
               <li><a href="#">Notification 3</a></li>
               <li><a href="#">Notification 4</a></li>
             </ul>
@@ -99,7 +114,8 @@
                 <textarea rows="1" cols="10" class="form-control" placeholder="Compose Micropost"></textarea>
               </div>
               <button id="share" class="btn btn-success">
-              <i class="fa fa-send-o"></i> <b>Share</b></button>
+                <i class="fa fa-send-o"></i> <b>Share</b>
+              </button>
             </form>
           </div>
         </div>
@@ -276,9 +292,14 @@
                       <div class="col-lg-3">
                         <img src="img/avatar.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-5">
                         <span class="name">Bootstrap</span>
                         <span class="username">@bootstrap</span>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-success btn-sm">
+                          Follow
+                        </button>
                       </div>
                     </div>
                   </a>
@@ -289,9 +310,14 @@
                       <div class="col-lg-3">
                         <img src="img/avatar_4.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-5">
                         <span class="name">Dev</span>
                         <span class="username">@dev_</span>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-success btn-sm">
+                          Follow
+                        </button>
                       </div>
                     </div>
                   </a>
@@ -302,10 +328,15 @@
                       <div class="col-lg-3">
                         <img src="img/avatar_2.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-5">
                         <span class="name">User123</span>
                         <span class="username">@user123</span>
                       </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-success btn-sm">
+                          Follow
+                        </button>
+                      </div>
                     </div>
                   </a>
                 </li>
@@ -315,10 +346,15 @@
                       <div class="col-lg-3">
                         <img src="img/avatar_3.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-5">
                         <span class="name">Rails</span>
                         <span class="username">@rails</span>
                       </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-success btn-sm">
+                          Follow
+                        </button>
+                      </div>
                     </div>
                   </a>
                 </li>
@@ -328,9 +364,14 @@
                       <div class="col-lg-3">
                         <img src="img/avatar_3.png" alt="" class="avatar">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-5">
                         <span class="name">Ruby User's Group</span>
                         <span class="username">@ruby_group</span>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-success btn-sm">
+                          Follow
+                        </button>
                       </div>
                     </div>
                   </a>
@@ -340,7 +381,7 @@
           </div>
           <div class="well">
             <div class="footer">
-              <label><a href="#">© 2014</a> | <a href="#">Author</a> | <a href="#">Blog</a> | <a href="#">Paper</a> | <a href="#">About</a> | <a href="#">Github</a> | <a href="#">Getting Started</a> | <a href="#">License</a></label>
+              <label><a href="#"><a href="#">Author</a> | <a href="#">Blog</a> | <a href="#">Paper</a> | <a href="#">About</a> | <a href="#">Github</a> | <a href="#">Getting Started</a> | <a href="#">License</a></label>
             </div>
           </div>
         </div>

@@ -109,12 +109,14 @@
 .username {
   display: block;
   font-size: 1.35rem;
-  color: #ccc;
+  color: #888;
 }
 
 .footer {
   padding: 10px;
   word-wrap: break-word;
+  font-size: 1.25rem;
+  font-weight: lighter;
 }
 
 .panel-list {
