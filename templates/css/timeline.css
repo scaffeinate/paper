@@ -3,11 +3,15 @@
   border-radius: 10rem;
 }
 
-#notification {
+.navbar li a.navbar-icons {
   font-size: 2rem;
   padding: 15px;
   color: #505050;
-  margin-right: 15px;
+  margin-right: 5px;
+}
+
+#notification {
+  font-size: 1.75rem;
 }
 
 .well {
@@ -66,6 +70,7 @@
 .micropost .hashtags {
   color: #4285f4;
   cursor: pointer;
+  font-weight: bold;
 }
 
 #microposts {
