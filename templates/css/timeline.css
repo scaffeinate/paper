@@ -52,10 +52,14 @@
   width: 40px;
 }
 
+
+.micropost .name, .micropost .post {
+  margin-left: 20px;
+}
+
 .micropost .name {
   font-weight: 700;
   font-size: 1.35rem;
-  margin-left: 20px;
   display: inline;
 }
 
@@ -73,7 +77,6 @@
 
 .micropost .post {
   margin-top: 5px;
-  margin-left: 20px;
 }
 
 .micropost .time {
