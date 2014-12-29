@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><!-- Insert title here --></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../dist/css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" href="../dist/css/paper.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/timeline.css">
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" href="../index.html"><!-- Title --></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a id="notification" href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+            </a>
+            <!-- Notifications List -->
+            <ul id="notifications" class="dropdown-menu" role="menu">
+              <li class="dropdown-title">
+                <h5><b><!-- Dropdown list title --></b></h5>
+              </li>
+              <li>
+                <a href="#">
+                  <h5><b><!-- Title --></b></h5>
+                  <!-- Content -->
+                </a>
+              </li>
+              ...
+              <li>
+                <a href="#" class="text-center">
+                  <span><b><i class="fa fa-bars"></i><!-- Load More Notifications --></b></span>
+                </a>
+              </li>
+            </ul>
+            <!-- end -->
+          </li>
+          <li class="dropdown">
+            <a id="inbox" href="#" class="dropdown-toggle navbar-icons" data-toggle="dropdown">
+              <i class="fa fa-inbox"></i>
+            </a>
+            <!-- Private Messages List -->
+            <ul id="messages" class="dropdown-menu" role="menu">
+              <li class="dropdown-title">
+                <h5><b><!-- Dropdown list title --></b></h5>
+              </li>
+              <li>
+                <a href="#">
+                  <h6><b><!-- User --></b></h6>
+                  <!-- Message -->
+                </a>
+              </li>
+              ...
+              <li>
+                <a href="#" class="text-center">
+                  <span><b><i class="fa fa-bars"></i><!-- Load More Messages --></b></span>
+                </a>
+              </li>
+            </ul>
+            <!-- end -->
+          </li>
+          <li>
+            <!-- Link to Profile with user avatar -->
+            <a href="#"><img class="navbar-avatar" src="img/avatar.png" alt="Profile"> sudharti </a>
+          </li>
+        </ul>
+        <!-- Search Form -->
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-addon"><i class="fa fa-search"></i></div>
+            </div>
+          </div>
+        </form>
+        <!-- end -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="well">
+          <div class="cover-pic">
+            <!-- User Avatar -->
+            <img src="img/avatar.png" alt="" class="profile-pic">
+          </div>
+          <div class="about">
+            <label class="name"><!-- name --></label>
+            <label class="username"><!-- username --></label>
+            <span><!-- about user --></span>
+            <label id="location"><i class="fa fa-map-marker"></i> <!-- location --></label>
+          </div>
+        </div><br>
+        <!-- Left Panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b><!-- Left Panel title --></b></h3>
+          </div>
+          <div class="panel-body">
+            <!-- Left panel list -->
+            <ul id="trends" class="panel-list">
+              <li><a href="#"><!-- List Item name --></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+      <div class="col-lg-6 col-md-5">
+        <div class="panel panel-default">
+          <div id="new-micropost" class="panel-body">
+            <!-- New post form -->
+            <form role="form">
+              <div class="form-group">
+                <textarea rows="1" cols="10" class="form-control" placeholder="Compose Micropost"></textarea>
+              </div>
+              <button id="share" class="btn btn-success">
+                <i class="fa fa-send-o"></i> <b>Share</b>
+              </button>
+            </form>
+            <!-- end -->
+          </div>
+        </div>
+        <div id="microposts" class="well">
+          <div class="micropost">
+            <div class="row">
+              <div class="col-lg-1 col-md-1 col-xs-1">
+                <!-- User avatar -->
+                <img src="img/avatar.png" alt="avatar" class="avatar">
+              </div>
+              <div class="col-lg-9 col-md-11 col-xs-11">
+                <span class="name"><!-- name --></span>
+                <span class="username"><!-- username --></span>
+                <div class="post"> 
+                  <!-- post -->
+                </div>
+              </div>
+              <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
+                <span class="time"><!-- time --></span>
+              </div>
+            </div>
+            <!-- actions -->
+            <div class="row actions">
+              <div class="col-lg-11 col-lg-offset-1">
+                <a href="#">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-retweet"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          ...
+        </div>
+      </div>
+      <!-- Right panel -->
+      <div class="col-lg-3 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b><!-- Right Panel Title --></b></h3>
+          </div>
+          <div class="panel-body">
+            <ul id="suggestions" class="panel-list">
+              <li>
+                <a href="#">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-2">
+                      <img src="img/avatar.png" alt="" class="avatar">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-xs-3">
+                      <span class="name"><!-- name --></span>
+                      <span class="username"><!-- username --></span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-3">
+                      <button class="btn btn-success btn-sm">
+                        Button
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              ...
+            </ul>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="well">
+          <div class="footer">
+            <h5><b><!-- Title --></b></h5>
+            <!-- Links -->
+            <a href="#"><!-- Link --></a>
+            <!-- end -->
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/handlebars-v2.0.0.js"></script>
+  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+  <script type="text/javascript" src="js/jquery.autosize.min.js"></script>
+  <script type="text/javascript" src="js/timeline.js"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../dist/css/vendor/font-awesome.min.css">
   <link rel="stylesheet" href="../dist/css/paper.css">
+  <link rel="stylesheet" href="css/prism.css">
   <style type="text/css">
     .img-preview {
       border: 1px solid #ccc;
@@ -54,7 +55,7 @@
                     <a href="landing.html" target="_blank" class="btn btn-success" role="button">
                       Live Preview
                     </a>
-                    <a href="#" class="btn btn-primary">
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#landingModal">
                       <i class="fa fa-code"></i> Code
                     </a>
                   </p>
@@ -66,14 +67,14 @@
                 <img src="../assets/img/login.jpg" alt="..." class="img-preview">
                 <div class="caption">
                   <h4 class="text-center"><b>Login Page</b></h4><br>
-                    <p class="text-center">
-                      <a href="login.html" target="_blank" class="btn btn-success" role="button">
-                        Live Preview
-                      </a>
-                      <a href="#" class="btn btn-primary">
-                        <i class="fa fa-code"></i> Code
-                      </a>
-                    </p>
+                  <p class="text-center">
+                    <a href="login.html" target="_blank" class="btn btn-success" role="button">
+                      Live Preview
+                    </a>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                      <i class="fa fa-code"></i> Code
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -88,7 +89,7 @@
                     <a href="timeline.html" target="_blank" class="btn btn-success" role="button">
                       Live Preview
                     </a>
-                    <a href="#" class="btn btn-primary">
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#timelineModal">
                       <i class="fa fa-code"></i> Code
                     </a>
                   </p>
@@ -104,7 +105,7 @@
                     <a href="blog.html" target="_blank" class="btn btn-success" role="button">
                       Live Preview
                     </a>
-                    <a href="#" class="btn btn-primary">
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#blogModal">
                       <i class="fa fa-code"></i> Code
                     </a>
                   </p>
@@ -112,6 +113,70 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="landingModal" tabindex="-1" role="dialog" aria-labelledby="landingModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Landing Template</h4>
+        </div>
+        <div class="modal-body">
+          <pre data-src="landing-template.html"></pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Login Template</h4>
+        </div>
+        <div class="modal-body">
+          <pre data-src="login-template.html"></pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="timelineModal" tabindex="-1" role="dialog" aria-labelledby="timelineModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Timeline Template</h4>
+        </div>
+        <div class="modal-body">
+          <pre data-src="timeline-template.html"></pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Blog Template</h4>
+        </div>
+        <div class="modal-body">
+          <pre data-src="blog-template.html"></pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -148,6 +213,7 @@
   </div>
   <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/prism.js"></script>
   <script type="text/javascript">
     window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
   </script>
