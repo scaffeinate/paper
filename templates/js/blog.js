@@ -66,7 +66,7 @@ $(document).ready(function(){
   template = Handlebars.compile(source); 
   $("#posts").html(template(posts));
 
-  $(".left-fixed").backstretch('../../assets/img/background-3.jpg');
+  $(".left-fixed").backstretch('../assets/img/background-3.jpg');
 
   $("#slidepanel").click(function(e){
     e.preventDefault();
