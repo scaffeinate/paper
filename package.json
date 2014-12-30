@@ -20,6 +20,8 @@
     "load-grunt-tasks": "~0.6.0",
     "grunt-contrib-connect": "latest",
     "grunt-contrib-sass": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-text-replace": "latest",
     "grunt-contrib-clean": "0.6.0"
   }
 }

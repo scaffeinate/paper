@@ -25,6 +25,10 @@ module.exports = function(grunt) {
       dist: {
         src: ['src/js/*.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      distCss: {
+        src: ['dist/css/*.css'],
+        dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
     copy: {
@@ -43,8 +47,8 @@ module.exports = function(grunt) {
         expand: true,
         flatten: true,
         cwd: '<%= bower_conf.directory %>',
-        src: ['fontawesome/css/font-awesome.min.css'],
-        dest: 'dist/css/vendor/'
+        src: ['fontawesome/css/font-awesome.css'],
+        dest: 'dist/css/'
       },
       distFonts: {
         expand: true,
@@ -62,6 +66,16 @@ module.exports = function(grunt) {
         dest: 'dist/css/fonts'
       }
     },
+    replace: {
+      url: {
+        src: ['dist/css/font-awesome.css'],
+        overwrite: true,
+        replacements: [{
+          from: '../',
+          to: ''
+        }]
+      }
+    },
     uglify: {
       options: {
         banner: '<%= banner %>'
@@ -69,10 +83,17 @@ module.exports = function(grunt) {
       dist: {
         src: ['<%= concat.dist.dest %>'],
         dest: 'dist/js/<%= pkg.name %>.min.js'
-      },
-      distBootstrap: {
-        src: ['<%= bower_conf.directory %>/bootstrap-sass-official/assets/javascripts/bootstrap.js'],
-        dest: 'dist/js/vendor/bootstrap.min.js'
+      }
+    },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'dist/css',
+          src: ['paper.css'],
+          dest: 'dist/css',
+          ext: '.min.css'
+        }]
       }
     },
     jshint: {
@@ -115,7 +136,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task
-  grunt.registerTask('default', ['clean', 'copy', 'concat', 'uglify']);
+  grunt.registerTask('default', ['clean', 'copy', 'replace', 'sass', 'concat', 'uglify', 'cssmin']);
 
   // Sass compile task.
   grunt.registerTask('compileSass', ['sass']);
