@@ -10,11 +10,30 @@
   <link rel="stylesheet" href="../dist/css/paper.css">
   <link rel="stylesheet" href="css/blog.css">
 </head>
-<body>
-  <div class="container-fluid">
+<body data-slide="push">
+  <div id="panel-left" class="mdm-panel">
+    <ul>
+      <li>
+        <i class="fa fa-home"></i><a href="#">Home</a>
+      </li>
+      <li>
+        <i class="fa fa-folder-o"></i><a href="#">Collections</a>
+      </li>
+      <li>
+        <i class="fa fa-bookmark"></i><a href="#">Bookmarks</a>
+      </li>
+      <li>
+        <i class="fa fa-bar-chart"></i><a href="#">Stats</a>
+      </li>
+      <li>
+        <i class="fa fa-plus"></i><a href="#">New Story</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid wrapper">
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 left-fixed">
-        <h2 class="logo"><a href="/">P</a></h2>
+        <h2 class="logo"><a id="slidepanel" data-panel="panel-left" href="#">P</a></h2>
         <div class="content">
           <h1 class="title"><b>Paper</b></h1>
           <h4><b>Simple, Elegant &amp; Flat Bootstrap Theme</b></h4>
@@ -67,6 +86,8 @@
   <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="../dist/js/vendor/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/handlebars-v2.0.0.js"></script>
+  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
   <script type="text/javascript" src="js/blog.js"></script>
+  <script type="text/javascript" src="../src/js/slidepanel.js"></script>
 </body>
 </html>

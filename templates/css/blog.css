@@ -1,12 +1,32 @@
-.wrapper {
-  position: relative;
+#panel-left {
+  padding: 10px;
+  color: #fff;
 }
+
+#panel-left a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+#panel-left i {
+  font-size: 1.75rem;
+}
+
+#panel-left ul{
+  margin-top: 50px;
+  list-style: none;
+}
+
+#panel-left li {
+  margin-top: 15px;
+}
+
 .left-fixed {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  background-image: url('../../assets/img/background-3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
