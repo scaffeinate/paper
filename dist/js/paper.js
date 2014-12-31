@@ -2305,6 +2305,45 @@
 }(jQuery);
 
 
++function ($) {
+  'use strict';
+
+  var Card = function(element,cover_pics_list, options) {
+    this.init(element, pics, options);
+  };
+
+  Card.prototype.init = function(element, pics, options) {
+    $(element).backstretch(pic);
+  };
+
+  function Plugin(data) {
+    return this.each(function () {
+      var $this   = $(this);
+      new Card(this, data.cover);
+    });
+  };
+
+  var old = $.fn.button;
+
+  $.fn.card = Plugin;
+  $.fn.card.Constructor = Card;
+
+  $(window).on('load', function () {
+    $('.cover').each(function () {
+      var $this = $(this)
+      var $cover_pics = $this.find("ul.cover-pics");
+      var options = $.extend({}, $this.data());
+      $cover_pics.hide();
+
+      $cover_pics.children('li').each(function() {
+        console.log(this.find('img').attr('src'));
+      });
+
+      Plugin.call($this, $cover_pics, options);
+    });
+  });
+
+} (jQuery);
 /*! Backstretch - v2.0.4 - 2013-06-19
 * http://srobbin.com/jquery-plugins/backstretch/
 * Copyright (c) 2013 Scott Robbin; Licensed MIT */
