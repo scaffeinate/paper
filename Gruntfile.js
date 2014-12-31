@@ -107,7 +107,7 @@ module.exports = function(grunt) {
     watch: {
       all: {
         files: '**/*.scss',
-        tasks: ['sass', 'cssmin']
+        tasks: ['sass', 'concat', 'cssmin']
       }
     },
     sass: {
@@ -142,6 +142,6 @@ module.exports = function(grunt) {
   grunt.registerTask('compileSass', ['sass']);
 
   // Connect task
-  grunt.registerTask('server', ['sass', 'cssmin', 'connect', 'watch']);
+  grunt.registerTask('server', ['sass', 'concat', 'cssmin', 'connect', 'watch']);
 
 };

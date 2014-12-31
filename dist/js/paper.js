@@ -2308,18 +2308,32 @@
 +function ($) {
   'use strict';
 
-  var Card = function(element,cover_pics_list, options) {
-    this.init(element, pics, options);
+  var Card = function(element,cover_pics, options) {
+    this.init(element, cover_pics, options);
   };
 
-  Card.prototype.init = function(element, pics, options) {
-    $(element).backstretch(pic);
+  Card.prototype.init = function(element, cover_pics, options) {
+    if(cover_pics.length == 1) {
+      $(element).backstretch(cover_pics);
+    } else {
+      $(element).backstretch(cover_pics, options);
+    }
   };
 
-  function Plugin(data) {
+  function Plugin() {
     return this.each(function () {
       var $this   = $(this);
-      new Card(this, data.cover);
+      var options = $.extend({}, $this.data());
+      var $cover = $this.find("ul.cover-pics");
+      var cover_pics = [];
+      if($cover.length > 0) {
+        $cover.find('img').each(function() {
+          cover_pics.push($(this).attr('src'));
+        });
+        new Card(this, cover_pics, options);
+      } else {
+        new Card(this, $this.data('cover'));
+      }
     });
   };
 
@@ -2331,15 +2345,7 @@
   $(window).on('load', function () {
     $('.cover').each(function () {
       var $this = $(this)
-      var $cover_pics = $this.find("ul.cover-pics");
-      var options = $.extend({}, $this.data());
-      $cover_pics.hide();
-
-      $cover_pics.children('li').each(function() {
-        console.log(this.find('img').attr('src'));
-      });
-
-      Plugin.call($this, $cover_pics, options);
+      Plugin.call($this);
     });
   });
 

@@ -43,46 +43,9 @@
   margin-top: 20px;
 }
 
-.micropost {
-  padding: 20px;
-}
-
-.micropost .avatar {
-  border-radius: 10rem;
-  width: 40px;
-}
-
-
-.micropost .name, .micropost .post {
-  margin-left: 20px;
-}
-
-.micropost .name {
-  font-weight: 700;
-  font-size: 1.35rem;
-  display: inline;
-}
-
-.micropost .username {
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: #888;
-  display: inline;
-}
-
 .mention {
   font-weight: 700; 
   color: #019c70;
-}
-
-.micropost .post {
-  margin-top: 5px;
-}
-
-.micropost .time {
-  color: #999;
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .hashtags {
@@ -98,41 +61,6 @@
 #microposts {
   margin-bottom: 40px;
 }
-
-/* .cover-pic {
-  height: 125px;
-  position: relative;
-}
-
-.cover-pic .profile-pic {
-  width: 35px;
-  border-radius: 10rem;
-  position: absolute;
-  bottom: 0;
-  left: 40%;
-  margin-bottom: -30px;
-  width: 63px !important;
-  border: 4px solid #fff;
-}
-
-.about {
-  margin-top: 40px;
-  line-height: 1.85rem !important;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.name {
-  font-weight: 600;
-  font-size: 1.65rem;
-}
-.username {
-  display: block;
-  font-size: 1.35rem;
-  color: #888;
-} */
 
 .footer {
   padding: 10px;
@@ -195,25 +123,4 @@
   background-color: #fff;
   border: 1px solid #c0c0c0;
   border-radius: 10em;
-}
-
-.actions {
-  margin-left: 10px;
-  margin-top: 15px;
-}
-
-.actions a {
-  color: #888;
-  font-size: 1.75rem;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-.actions a:hover {
-  color: #4285f4;
-}
-
-.actions i.disabled {
-  color: #ccc;
-  cursor: default;
 }

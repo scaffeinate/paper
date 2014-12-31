@@ -105,12 +105,12 @@
               <li><img src="../assets/img/img-7.jpg"></li>
               <li><img src="../assets/img/img-8.jpg"></li>
             </ul>
-            <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="" class="profile-pic">
+            <img src="https://en.gravatar.com/userimage/23763355/e7bbf514106dc2fd9ddb4e8160a72e8c.png" alt="" class="avatar">
           </div>
           <div class="about">
-            <label class="name">Sudharsanan M</label>
-            <label class="username">@sudharti</label>
-            <span>22 | Hacker | Technophile | Blogger | Android Dev | Rails Fanboy | Rubyist</span>
+            <h3 class="name">Sudharsanan M</h3>
+            <h5 class="username">@sudharti</h5>
+            <span class="content">22 | Hacker | Technophile | Blogger | Android Dev | Rails Fanboy | Rubyist</span>
             <label id="location"><i class="fa fa-map-marker"></i> Dallas, Texas</label>
           </div>
         </div><br>
@@ -142,27 +142,25 @@
             </form>
           </div>
         </div>
-        <div id="microposts" class="well">
+        <div id="microposts" class="feed">
           <script id="microposts-template" type="text/x-handlebars-template">
             {{#each microposts}}
             <div class="micropost">
-              <div class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1">
-                  <img src={{avatar}} alt={{avatar}} class="avatar">
+              <div class="content">
+                <div class="avatar-content">
+                  <img src={{avatar}} alt={{avatar}}>
                 </div>
-                <div class="col-lg-9 col-md-11 col-xs-11">
+                <div class="post-content">
                   <span class="name">{{name}}</span>
                   <span class="username">{{username}}</span>
-                  <div class="post"> 
-                    {{{post}}}
-                  </div>
+                  <div class="post">{{{post}}}</div>
                 </div>
-                <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                  <span class="time">{{time}}</span>
+                <div class="right-content">
+                  <span>{{time}}</span>
                 </div>
               </div>
-              <div class="row actions">
-                <div class="col-lg-11 col-lg-offset-1">
+              <div class="actions">
+                <div class="actions-content">
                   <a href="#">
                     <i class="fa fa-arrow-left"></i>
                   </a>
@@ -230,7 +228,6 @@
   <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="../dist/js/paper.min.js"></script>
   <script type="text/javascript" src="js/handlebars-v2.0.0.js"></script>
-  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
   <script type="text/javascript" src="js/jquery.autosize.min.js"></script>
   <script type="text/javascript" src="js/timeline.js"></script>
 </body>
