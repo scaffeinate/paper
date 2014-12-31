@@ -1,7 +1,6 @@
 .feed {
-
   @extend .well;
-
+  border: 1px solid #ddd;
   .micropost {
     padding: 20px;
     .content {
@@ -38,6 +37,17 @@
           font-size: 1.25rem;
           color: #888;
           display: inline;
+        }
+
+        .mention {
+          font-weight: 700; 
+          color: #019c70;
+        }
+
+        .hashtags {
+          color: #4285f4;
+          cursor: pointer;
+          font-weight: bold;
         }
       }
 
