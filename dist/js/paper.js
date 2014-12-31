@@ -2435,4 +2435,14 @@
   $.fn.slidepanel = Plugin;
   $.fn.slidepanel.Constructor = SlidePanel;
 
+  $(window).on('load', function () {
+    $('body').find('[data-panel]').each(function () {
+      var $this = $(this);
+      $this.click(function(e){
+        e.preventDefault();
+        Plugin.call($this);
+      });
+    });
+  });
+
 } (this, jQuery);

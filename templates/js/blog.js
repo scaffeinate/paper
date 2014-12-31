@@ -67,10 +67,5 @@ $(document).ready(function(){
   $("#posts").html(template(posts));
 
   $(".left-fixed").backstretch('../assets/img/background-3.jpg');
-
-  $("#slidepanel").click(function(e){
-    e.preventDefault();
-    $(this).slidepanel();
-  });
-
+  
 });
