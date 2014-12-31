@@ -1,6 +1,6 @@
 .feed {
   @extend .well;
-  border: 1px solid #ddd;
+  border: 1px solid $border-color;
   .micropost {
     padding: 20px;
     .content {

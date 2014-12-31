@@ -1,0 +1,94 @@
+.pricing-table {
+  padding: 0 !important;
+  background-color: white;
+  border: 1px solid $border-color;
+
+  .header {
+    padding: 20px 0px;
+    background-color: $pricing-default-bg;
+    text-align: center;
+    color: white;
+    .title {
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+    .subtitle {
+      display: block;
+      font-weight: lighter;
+      font-size: 1.25rem;
+    }
+  }
+
+  .center {
+    padding: 10px;
+    ul {
+      list-style: none;
+      padding: 5px;
+      li {
+        font-weight: lighter;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .foot {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    a, button {
+      background-color: $pricing-default-bg;
+      border: none;
+      width: 200px;
+    }
+  }
+}
+
+.gold {
+  .header {
+    background-color: $pricing-gold-bg;
+  }
+
+  .foot {
+    a, button {
+      background-color: $pricing-gold-bg;
+    }
+  }
+}
+
+.basic {
+  .header {
+    background-color: $pricing-basic-bg;
+  }
+
+  .foot {
+    a, button {
+      background-color: $pricing-basic-bg;
+    }
+  }
+}
+
+.enterprise {
+  .header {
+    background-color: $pricing-enterprise-bg;
+  }
+
+  .foot {
+    a, button {
+      background-color: $pricing-enterprise-bg;
+    }
+  }
+}
+
+.free {
+  .header {
+    background-color: $pricing-free-bg;
+  }
+
+  .foot {
+    a, button {
+      background-color: $pricing-free-bg;
+    }
+  }
+}

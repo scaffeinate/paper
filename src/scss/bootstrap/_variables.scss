@@ -24,7 +24,7 @@ $brand-success:         #00ca6d !default;
 $brand-info:            #00c0ef !default;
 $brand-warning:         #fcad26 !default;
 $brand-danger:          #f56954 !default;
-
+$border-color:          #ddd !default;
 
 //== Scaffolding
 //
@@ -741,6 +741,11 @@ $panel-danger-text:           $state-danger-text !default;
 $panel-danger-border:         $state-danger-border !default;
 $panel-danger-heading-bg:     $state-danger-bg !default;
 
+$pricing-default-bg:          $state-success-bg !default;
+$pricing-gold-bg:             #f29e0d !default;
+$pricing-basic-bg:            $brand-primary !default;
+$pricing-enterprise-bg:       $brand-danger !default;
+$pricing-free-bg:             #476c73 !default;
 
 //== Thumbnails
 //
