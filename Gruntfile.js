@@ -142,6 +142,6 @@ module.exports = function(grunt) {
   grunt.registerTask('compileSass', ['sass']);
 
   // Connect task
-  grunt.registerTask('server', ['sass', 'connect', 'watch']);
+  grunt.registerTask('server', ['sass', 'cssmin', 'connect', 'watch']);
 
 };
