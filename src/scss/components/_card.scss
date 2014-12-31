@@ -1,14 +1,14 @@
 .card {
   background-color: white;
   .cover {
-    height: 125px;
+    height: 150px;
     position: relative;
     
     .cover-pics {
       display: none;
     }
 
-    .profile-pic {
+    .avatar {
       width: 35px;
       border-radius: 10rem;
       position: absolute;
@@ -27,15 +27,15 @@
     padding-right: 10px;
     padding-bottom: 10px;
     text-align: center;
-  }
 
-  .name {
-    font-weight: 600;
-    font-size: 1.65rem;
-  }
-  .username {
-    display: block;
-    font-size: 1.35rem;
-    color: #888;
+    .name {
+      font-weight: 600;
+      font-size: 1.65rem;
+    }
+    .username {
+      display: block;
+      font-size: 1.35rem;
+      color: #888;
+    }
   }
 }
