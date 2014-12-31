@@ -1,6 +1,6 @@
 // Tables
 
-@mixin table-row-variant($state, $background) {
+@mixin table-row-variant($state, $background, $color:black) {
   // Exact selectors below required to override `.table-striped` and prevent
   // inheritance to nested tables.
   .table > thead > tr,
@@ -10,6 +10,7 @@
     > th.#{$state},
     &.#{$state} > td,
     &.#{$state} > th {
+      color: $color;
       background-color: $background;
     }
   }

@@ -3770,6 +3770,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.active,
 .table > tfoot > tr.active > td,
 .table > tfoot > tr.active > th {
+  color: white;
   background-color: #f5f5f5; }
 
 .table-hover > tbody > tr > td.active:hover,
@@ -3786,6 +3787,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.success,
 .table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th {
+  color: white;
   background-color: #00ca6d; }
 
 .table-hover > tbody > tr > td.success:hover,
@@ -3802,6 +3804,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
+  color: white;
   background-color: #00acd5; }
 
 .table-hover > tbody > tr > td.info:hover,
@@ -3818,6 +3821,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.warning,
 .table > tfoot > tr.warning > td,
 .table > tfoot > tr.warning > th {
+  color: white;
   background-color: #fcad26; }
 
 .table-hover > tbody > tr > td.warning:hover,
@@ -3834,6 +3838,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th {
+  color: white;
   background-color: #f56954; }
 
 .table-hover > tbody > tr > td.danger:hover,
