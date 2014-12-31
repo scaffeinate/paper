@@ -52,8 +52,47 @@
         <div class="col-lg-8 col-lg-offset-2">
           <h2><b>Slider Panel</b></h2>
           <h3><b>Docs</b></h3><hr>
+          A simple sliding panel to display off-canvas contents. The panel pushes the exiting body content to the right and smoothly transitions into the view area. This addon uses css transforms (translate3d) and cubic bezier transitions to achieve the sliding effect. 
+          <h4><b>Browser Compatability</b></h4>
+          <ul>
+            <li>Firefox 4.0 (2.0)+</li>
+            <li>Chrome 4.0+</li>
+            <li>Internet Explorer 10+ (Really? Even IE? :O)</li>
+            <li>Opera 10.5+</li>
+            <li>Safari 3.1+</li>
+          </ul><br>
+          <h4><b>Getting Started</b></h4>
+          Add data-slide="push" to &lt;body&gt;
+          <br><br>
+          <pre><code class="language-markup">&lt;body data-slide='push'&gt;</code></pre>
+          <br>
+          Add Panel content &lt;div&gt;&lt;/div&gt;
+          <br><br>
+          <pre><code class="language-markup">&lt;div id='example-panel'&gt;&lt;/div&gt;</code></pre>
+          <br>
+          Enclose the page content inside a .wrapper class &lt;div class="wrapper"&gt;&lt;/div&gt;
+          <br><br>
+          <pre><code class="language-markup">&lt;div class='wrapper'&gt;...&lt;/div&gt;</code></pre>
+          <br>
+          Add data-panel="[div-id]" to the &lt;button&gt; or &lt;a&gt; which on clicked will trigger the slide transition
+          <br><br>
+          <pre><code class="language-markup">&lt;a href="#" data-panel="example-panel"&gt;slide&lt;/a&gt;</code></pre>
+          <br>
+          Voila! Nothing else to do! Check out the example code below. Also view the demo by clicking at the top left button in the navbar.
           <h3><b>Example</b></h3><hr>
           <pre data-src="../templates/slider-template.html"></pre>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span>Released under MIT License</span> | 
+            <span>Built on <a href="http://getbootstrap.com/">Bootstrap</a></span> |
+            <span>Made by <a href="https://github.com/sudharti">sudharti</a></span>
+          </div>
         </div>
       </div>
     </div>
