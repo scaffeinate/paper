@@ -12,9 +12,6 @@
   font-weight: bold;
 }
 
-pre[class*='language-'] > code[data-language] {
-  max-height: 100% !important;
-}
 
 .logo a {
   position: absolute;
