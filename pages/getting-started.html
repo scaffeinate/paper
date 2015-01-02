@@ -126,6 +126,20 @@
 npm install
 bower install</code></pre>
         <p><b>npm install</b> will search for package.json and fetch the node packages into node_modules/ directory. Similarly <b>bower_install</b> will search for bower.json and fetch packages &amp; dependencies into bower_components/ directory.</p>
+        <h5><b>Grunt Tasks</b></h5>
+        The available grunt tasks(commands) are specified in the Gruntfile.js and listed below
+        <ul>
+          <li><b>grunt clean:</b> Cleans up the dist/ directory</li>
+          <li><b>grunt copy:</b> Copies the packages and files from bower_components into the dist/ folder</li>
+          <li><b>grunt concat:</b> Combines multiple files into final package</li>
+          <li><b>grunt sass:</b> Compiles the Sass files from src/ and generates css in dist/css</li>
+          <li><b>grunt uglify:</b> Uglify is used to minify the generated Javascript file into paper.min.js</li>
+          <li><b>grunt cssmin:</b> Minifies the generated CSS file into paper.min.css</li>
+          <li><b>grunt:</b> The default grunt task which performs the above tasks in the following order ['clean', 'copy', 'replace', 'sass', 'concat', 'uglify', 'cssmin']</li>
+          <li><b>grunt connect:</b> Task to connect a server</li>
+          <li><b>grunt watch:</b> Watches for changes in scss files and when it occurs performs <b>grunt</b> again</li>
+          <li><b>grunt server:</b> Start the server, performs <b>grunt connect</b> and <b>grunt watch</b></li>
+        </ul>
         <h4><b>How to Customize?</b></h4>
         <h4><b>Additional Components</b></h4>
         <h4><b>Free Templates</b></h4>
