@@ -39,11 +39,20 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <h2><b>Getting Started</b></h2>
-        Paper is a simple, elegant &amp; flat Bootstrap Theme. It's free to use and open source. Checkout the source on <a href="#">Github</a>. Paper is built on <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a> and written using Sass.
-        <h4><b>Quick start</b></h4>
-        To start using paper just download the CSS and Javascript files and replace Bootstrap's default ones. Since this is built on Bootstrap you are pretty much good to go!
-        <br><br><a href="#" class="btn btn-success"><i class="fa fa-arrow-circle-down"></i> Download</a><br><br>
-        <h4><b>File Structure</b></h4>
+        Paper is a simple, elegant &amp; flat Bootstrap Theme. It's free to use and open source. Checkout the source on <a href="#">Github</a>. Paper is built on <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a> and written using Sass. It also comes up with <a href="http://srobbin.com/jquery-plugins/backstretch/" target="_blank">Jquery Backstretch</a>, <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Fontawesome</a> and the <b>Lato</b> font.
+        <h3><b>Quick start</b></h3>
+        To start using paper just download the CSS and Javascript files and replace Bootstrap's default ones. Since this is built on Bootstrap you are pretty much good to go! And also don't forget to copy the <b>fonts/</b> directory which holds the fonts (Lato and Fontawesome).
+        <br><br><a href="#" class="btn btn-success"><i class="fa fa-arrow-circle-down"></i> Download</a><br>
+        <h3><b>Custom Theme</b></h3>
+        If you want to modify the theme here is what to do.
+        <h4><b>Fetch the Repository</b></h4>
+        <ol>
+          <li>Install <a href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a></li>
+          <li>Clone the Repository using <code>git clone git@github.com:sudharti/paper.git</code></li>
+          <li>This will download the master branch of the project's code to your system</li>
+          <li>The project's folder structure is descibed below</li>
+        </ol>
+        <h4><b>Folder Structure</b></h4>
         Before you jump into customization here is the description of how the project is organized into directories. Below is a tree like representation of the file structure. <br><br>
         <div class="row">
           <div class="col-lg-8">
@@ -141,8 +150,61 @@ bower install</code></pre>
           <li><b>grunt server:</b> Start the server, performs <b>grunt connect</b> and <b>grunt watch</b></li>
         </ul>
         <h4><b>How to Customize?</b></h4>
+        Once Grunt and Bower are installed and configured you can start customizing the theme. To customize the theme follow the steps:
+        <ol>
+          <li>Modify the scss and js files under src/</li>
+          <li>The scss directory consists of bootstrap/ which includes the native bootstrap scss files.</li>
+          <li>The components/ directory has the added components along with fonts.scss</li>
+          <li>The js/ directory has bootstrap.js, backstretch and additional components</li>
+          <li>Start the server using <b>grunt server</b></li>
+          <li>Any changes you make to the scss files will trigger the watch task which will regenerate the dist/ files</li>
+          <li>To manually compile the source again you can just execute <b>grunt</b> which will run the default task</li>
+          <li>You can also execute the individual tasks listed above using <b>grunt [taskname]</b></li>
+        </ol>
         <h4><b>Additional Components</b></h4>
-        <h4><b>Free Templates</b></h4>
+        <ul>
+          <li>Card Layout</li>
+          <li>Feed Layout</li>
+          <li>Pricing Tables</li>
+          <li>Slider Panel</li>
+        </ul>
+        More info can be found at <a href="extras.html">Extras</a>
+        <h4><b>Templates</b></h4>
+        Checkout some of the templates designed using paper <a href="templates.html">Templates</a>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img src="../assets/img/landing.jpg" alt="Landing">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img src="../assets/img/login.jpg" alt="Login">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img src="../assets/img/timeline.jpg" alt="Timeline">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img src="../assets/img/blog.jpg" alt="Blog">
+            </div>
+          </div>
+        </div>
+        <h3><b>Contributing</b></h3>
+        If you want to contribute to this project
+        <ol>
+          <li>Fork the Project at <code>https://github.com/sudharti/paper</code></li>
+          <li>Make changes to the code</li>
+          <li>Send Pull Request!</li>
+        </ol>
+        <h3><b>Issues</b></h3>
+        You can raise issues at <a href="https://github.com/sudharti/paper/issues">https://github.com/sudharti/paper/issues</a>
+        <br><br>
+        <i>If you really like this project you can help Spread the Word. You can also star the project at Github :)</i>
       </div>
     </div>
   </div>
