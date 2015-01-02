@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../dist/css/paper.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../templates/css/prism.css">
 </head>
 <body data-spy="scroll" data-target="#features-nav" style="position: relative;">
   <nav class="navbar navbar-default" role="navigation">
@@ -36,15 +37,15 @@
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-8 col-lg-offset-2">
         <h2><b>Getting Started</b></h2>
         Paper is a simple, elegant &amp; flat Bootstrap Theme. It's free to use and open source. Checkout the source on <a href="#">Github</a>. Paper is built on <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a> and written using Sass.
         <h4><b>Quick start</b></h4>
-        <h4><b>How to Customize it?</b></h4>
+        To start using paper just download the CSS and Javascript files and replace Bootstrap's default ones. Since this is built on Bootstrap you are pretty much good to go!
+        <br><br><a href="#" class="btn btn-success"><i class="fa fa-arrow-circle-down"></i> Download</a><br><br>
+        <h4><b>File Structure</b></h4>
+        Before you jump into customization here is the description of how the project is organized into directories. Below is a tree like representation of the file structure. <br><br>
         <div class="row">
-          <div class="col-lg-8">
-            <h5><b>File Structure</b></h5>
-          </div>
           <div class="col-lg-8">
             <pre>
   paper/
@@ -91,6 +92,7 @@
   │   ├── getting-started.html
   │   └── slider.html
   ├── templates/
+  │   ├── code-templates/
   │   ├── css/
   │   ├── img/
   │   ├── js/
@@ -108,6 +110,23 @@
           </div>
         </div>
         <h4><b>Grunt &amp; Bower</b></h4>
+        <p>
+          <a href="http://gruntjs.com/">Grunt - The Javascript Task Runner</a> is used for automating tasks and compile the source. Paper also uses bower to fetch and install packages and their dependencies.
+          So install Grunt and Bower before customizing.
+        </p>
+        <h5><b>Installing Grunt</b></h5>
+        <p>Grunt and it's plugins can be installed and managed using npm, the default Javascript package manager for nodejs. To install nodejs checkout the following <a href="https://github.com/joyent/node/wiki/installing-node.js-via-package-manager">link</a>
+        You can then install Grunt using the following command</p>
+        <pre><code class="language-bash">npm install -g grunt-cli</code></pre>
+        <h5><b>Installing Bower</b></h5>
+        <p>You can install Bower using npm.</p>
+        <pre><code class="language-bash">npm install -g bower</code></pre>
+        <p>To install the packages navigate to the project and install using <b>npm install</b> &amp; <b>bower install</b></p>
+        <pre><code class="language-bash">cd paper/
+npm install
+bower install</code></pre>
+        <p><b>npm install</b> will search for package.json and fetch the node packages into node_modules/ directory. Similarly <b>bower_install</b> will search for bower.json and fetch packages &amp; dependencies into bower_components/ directory.</p>
+        <h4><b>How to Customize?</b></h4>
         <h4><b>Additional Components</b></h4>
         <h4><b>Free Templates</b></h4>
       </div>
@@ -127,5 +146,6 @@
   </div>
   <script type="text/javascript" src="../dist/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="../dist/js/paper.min.js"></script>
+  <script type="text/javascript" src="../templates/js/prism.js"></script>
 </body>
 </html>

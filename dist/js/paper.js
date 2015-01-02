@@ -1,5 +1,5 @@
 /*! paper - v0.7.0 
-* Copyright (c) 2014 "Sudharsanan" Muralidharan; Licensed  */
+* Copyright (c) 2015 "Sudharsanan" Muralidharan; Licensed  */
 /* ========================================================================
  * Bootstrap: affix.js v3.3.1
  * http://getbootstrap.com/javascript/#affix
