@@ -6,7 +6,7 @@ body[data-slide='push'] {
   width: 100%;
 }
 
-.mdm-overlay{
+.overlay{
   width: 100%;
   height: 100%;
   position: fixed;
@@ -14,7 +14,7 @@ body[data-slide='push'] {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.wrapper, .mdm-left-panel {
+.wrapper, .left-panel {
   visibility: visible !important;
   -webkit-transition: -webkit-transform .2s cubic-bezier(0.2,0.3,0.25,0.9);
   -moz-transition: -moz-transform .2s cubic-bezier(0.2,0.3,0.25,0.9) 0s;
@@ -22,13 +22,13 @@ body[data-slide='push'] {
   transition: transform .2s cubic-bezier(0.2,0.3,0.25,0.9) 0s;
 }
             
-.mdm-left-panel {
+.left-panel {
   width: 300px !important;
   height: 100%;
   display: inline-block;
 }
 
-.mdm-slide-in-left{
+.slide-in-left{
   -webkit-transform: translate3d(300px,0,0);
   -moz-transform: translate3d(300px,0,0);
   -ms-transform: translate3d(300px,0,0);
@@ -36,7 +36,7 @@ body[data-slide='push'] {
   transform: translate3d(300px,0,0);
 }
 
-.mdm-slide-out {
+.slide-out {
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
@@ -44,11 +44,11 @@ body[data-slide='push'] {
   transform: translate3d(0,0,0);
 }
 
-.mdm-hide-overflow{
+.hide-overflow{
   overflow: hidden !important;
 }
 
-.mdm-panel{
+.slider-panel {
   position: fixed;
   visibility: hidden;
   margin-left: -300px;

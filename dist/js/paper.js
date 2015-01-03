@@ -2364,28 +2364,30 @@
   };
 
   SlidePanel.DEFAULTS = {
-    overlayClass: 'mdm-overlay',
-    bodyClass: 'mdm-body',
-    dirClass: 'mdm-left-panel',
-    slideInClass: 'mdm-slide-in-left',
-    slideOutClass: 'mdm-slide-out',
-    overlayTemplate: '<div id="overlay" class="mdm-overlay"></div>'
+    overlayClass: 'overlay',
+    bodyClass: 'body',
+    dirClass: 'left-panel',
+    wrapperClass: 'wrapper',
+    slideInClass: 'slide-in-left',
+    slideOutClass: 'slide-out',
+    overlayTemplate: '<div class="overlay"></div>'
   };
 
   SlidePanel.prototype.init = function(element, options) {
     this.$element = $(element);
     this.options = options;
     this.$panel = $('#'+options.panel);
+    this.$wrapper = $('.' + options.wrapperClass);
     var _this = this;
 
     if(position == 0) {
       $('body').prepend(this.options.overlayTemplate);
-      $('#overlay').click(function() {
+      $('.overlay').click(function() {
         _this.slide();
       });
     }
 
-    this.$overlay = $('#overlay');
+    this.$overlay = $('.overlay');
 
     if($('body').css('zIndex') == 'auto') {
       zIndex = 0;
@@ -2408,14 +2410,14 @@
     if(position%2 == 0) {
       this.$panel.removeClass(this.options.slideOutClass);
       this.$panel.addClass(this.options.slideInClass);
-      $('.wrapper').addClass(this.options.slideInClass);
-      $('body').addClass('mdm-hide-overflow');
+      this.$wrapper.addClass(this.options.slideInClass);
+      //$('body').addClass('hide-overflow');
       this.$overlay.css('display', 'block');
     } else {
       this.$panel.removeClass(this.options.slideInClass);
-      this.$panel.addClass('mdm-slide-out');
-      $('.wrapper').removeClass(this.options.slideInClass);
-      $('body').removeClass('mdm-hide-overflow');
+      this.$panel.addClass('slide-out');
+      this.$wrapper.removeClass(this.options.slideInClass);
+      //$('body').removeClass('hide-overflow');
       this.$overlay.css('display', 'none');
     }
 
