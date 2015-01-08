@@ -66,7 +66,9 @@ paper/
 </pre>
 Getting Started
 ===============
-- [Download](https://github.com/sudharti/paper/archive/v0.7.zip)
+- [Download](https://github.com/sudharti/paper/archive/0.7.0.zip)
+- Or clone the project `git clone https://github.com/sudharti/paper.git`
+- Or install using bower `bower install paper-bootstrap`
 - Replace Bootstrap with contents in dist/ directory
 - Don't forget to copy the fonts/ directory
 - Voila!
