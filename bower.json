@@ -1,10 +1,22 @@
 {
-  "name": "social-ui",
-  "description": "Social News Feed Template built using Bootstrap",
-  "version": "0.0.1",
-  "author": "Sudharsanan Muralidharan",
-  "homepage": "http://sudharti.github.io",
+  "name": "paper-bootstrap",
+  "version": "0.7",
+  "description": "A Simple, Elegant & Flat Bootstrap Theme",  
+  "keywords": ["paper-bootstrap", "bootstrap", "paper", "theme", "flat theme"],
+  "authors": [
+    { "name": "Sudharsanan M", "email": "sudhar.ti@gmail.com" }
+  ],
+  "license": "MIT",
+  "homepage": "http://sudharti.github.io/paper",
+  "repository": {
+  "type": "git",
+    "url": "git@github.com:sudharti/paper.git"
+  },
+  "main": ["dist/css/paper.min.css", "dist/js/paper.min.js", "dist/css/fonts/*"],
   "dependencies": {
+    "jquery": "latest"
+  },
+  "devDependencies": {
     "html5shiv": "~3.7.2",
     "fontawesome": "~4.2.0",
     "bootstrap-sass-official": "latest"

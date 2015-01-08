@@ -55,13 +55,11 @@
       this.$panel.removeClass(this.options.slideOutClass);
       this.$panel.addClass(this.options.slideInClass);
       this.$wrapper.addClass(this.options.slideInClass);
-      //$('body').addClass('hide-overflow');
       this.$overlay.css('display', 'block');
     } else {
       this.$panel.removeClass(this.options.slideInClass);
       this.$panel.addClass('slide-out');
       this.$wrapper.removeClass(this.options.slideInClass);
-      //$('body').removeClass('hide-overflow');
       this.$overlay.css('display', 'none');
     }
 
